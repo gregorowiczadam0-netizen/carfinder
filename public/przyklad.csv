@@ -1,0 +1,2 @@
+brand,model,trim,body,price,mileage,year,fuel,gearbox,power,city,description,serviceHistory,accidentFree,externalId,isDemo
+Volvo,S80,2.4 Momentum,Sedan,18500,178000,2009,Benzyna,Automatyczna,170,Łódź,"FIKCYJNA OFERTA do demonstracji importu. Ten samochód nie jest na sprzedaż.",true,,example-volvo-s80,true
