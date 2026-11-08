@@ -39,7 +39,7 @@ export default function RootLayout({
                 <Link href="/porownaj">Porównywarka</Link>
               </nav>
               <Link className="import-link" href="/import">
-                Importuj CSV <ArrowUpRight size={16} />
+                Importuj dane <ArrowUpRight size={16} />
               </Link>
             </div>
           </header>
@@ -51,7 +51,8 @@ export default function RootLayout({
             </Link>
             <span>Dobry samochód. Świadomy wybór.</span>
             <small>
-              MVP · Dane demo są fikcyjne · Bez automatycznego pobierania ofert
+              MVP · Snapshoty są niezweryfikowane, demo jest fikcyjne · Bez
+              automatycznego pobierania ofert
             </small>
           </footer>
         </GarageProvider>

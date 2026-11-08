@@ -1,3 +1,5 @@
+import { importMarketJson } from "@/lib/market-db";
+import { MAX_JSON_BYTES } from "@/lib/market-import";
 import { listings } from "@/lib/db";
 import { parseImport } from "@/lib/import";
 import { timingSafeEqual } from "node:crypto";
@@ -37,9 +39,13 @@ export async function POST(request: Request) {
       },
       { status: 403 },
     );
-  if (Number(request.headers.get("content-length")) > MAX_BYTES)
+  const isJson =
+    request.headers.get("content-type")?.split(";")[0].trim() ===
+    "application/json";
+  const maxBytes = isJson ? MAX_JSON_BYTES : MAX_BYTES;
+  if (Number(request.headers.get("content-length")) > maxBytes)
     return Response.json(
-      { error: "Maksymalny rozmiar pliku to 1 MB." },
+      { error: `Maksymalny rozmiar pliku to ${isJson ? 10 : 1} MB.` },
       { status: 413 },
     );
   const reader = request.body?.getReader();
@@ -50,16 +56,36 @@ export async function POST(request: Request) {
     const { done, value } = await reader.read();
     if (done) break;
     size += value.length;
-    if (size > MAX_BYTES) {
+    if (size > maxBytes) {
       await reader.cancel();
       return Response.json(
-        { error: "Maksymalny rozmiar pliku to 1 MB." },
+        { error: `Maksymalny rozmiar pliku to ${isJson ? 10 : 1} MB.` },
         { status: 413 },
       );
     }
     chunks.push(value);
   }
-  const result = parseImport(Buffer.concat(chunks).toString("utf8"));
+  const raw = Buffer.concat(chunks).toString("utf8");
+  if (isJson) {
+    try {
+      const report = importMarketJson(raw);
+      return Response.json(
+        report.snapshot
+          ? report
+          : {
+              ...report,
+              error: "Nieprawidłowy plik JSON; nie zapisano rekordów.",
+            },
+        { status: report.snapshot ? 200 : 422 },
+      );
+    } catch {
+      return Response.json(
+        { error: "Zapis JSON nie powiódł się. Transakcja została wycofana." },
+        { status: 500 },
+      );
+    }
+  }
+  const result = parseImport(raw);
   if (result.errors.length)
     return Response.json(
       {

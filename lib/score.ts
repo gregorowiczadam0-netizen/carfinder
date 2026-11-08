@@ -1,3 +1,4 @@
+import { mileageWarning } from "./quality";
 import type { Car } from "./catalog";
 export function scoreCar(
   car: Car,
@@ -6,6 +7,8 @@ export function scoreCar(
 ) {
   const peers = all.filter(
     (c) =>
+      car.body !== null &&
+      car.fuel !== null &&
       c.id !== car.id &&
       c.isDemo === car.isDemo &&
       c.brand === car.brand &&
@@ -23,6 +26,14 @@ export function scoreCar(
         : (prices[mid - 1] + prices[mid]) / 2
       : null;
   const missing: string[] = [];
+  const warning = mileageWarning(car.mileage, car.year, currentYear);
+  for (const [label, value] of [
+    ["nadwoziu", car.body],
+    ["paliwie", car.fuel],
+    ["skrzyni biegów", car.gearbox],
+    ["mieście", car.city],
+  ] as const)
+    if (!value) missing.push(`Brak danych o ${label}.`);
   if (!median)
     missing.push(
       "Za mało podobnych ofert (minimum 3); cena nie została oceniona.",
@@ -48,9 +59,9 @@ export function scoreCar(
     },
     {
       label: "Przebieg",
-      points: clamp(25 * (1 - car.mileage / 300000), 25),
+      points: warning ? 0 : clamp(25 * (1 - car.mileage / 300000), 25),
       max: 25,
-      note: "25 pkt przy 0 km, 0 pkt przy 300 tys. km",
+      note: warning || "25 pkt przy 0 km, 0 pkt przy 300 tys. km",
     },
     {
       label: "Wiek samochodu",
@@ -81,8 +92,26 @@ export function scoreCar(
             : "Nie potwierdzono w ofercie",
     },
   ];
+  const rawTotal = criteria.reduce((s, c) => s + c.points, 0);
+  const incomplete =
+    !car.body ||
+    !car.fuel ||
+    !car.gearbox ||
+    car.serviceHistory === null ||
+    car.accidentFree === null;
+  const cap = warning ? 30 : incomplete ? 49 : 100;
+  const capReason = warning
+    ? "Limit 30/100: przebieg wymaga weryfikacji."
+    : incomplete
+      ? "Limit 49/100: brak kluczowych danych; niska pewność oceny."
+      : null;
   return {
-    total: criteria.reduce((s, c) => s + c.points, 0),
+    total: Math.min(rawTotal, cap),
+    rawTotal,
+    cap,
+    capReason,
+    warnings: warning ? [warning] : [],
+    confidence: incomplete || !!warning ? "niska" : "ograniczona",
     criteria,
     missing,
     median,

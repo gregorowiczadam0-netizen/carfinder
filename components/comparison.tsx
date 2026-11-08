@@ -3,7 +3,7 @@ import Link from "next/link";
 import { X, GitCompareArrows, ArrowLeft } from "lucide-react";
 import { useGarage } from "./garage";
 import { CarArt } from "./car-art";
-import { type Car, money, number } from "@/lib/catalog";
+import { type Car, money, number, sourceLabel } from "@/lib/catalog";
 import { scoreCar } from "@/lib/score";
 export function Comparison({ cars }: { cars: Car[] }) {
   const g = useGarage(),
@@ -11,13 +11,22 @@ export function Comparison({ cars }: { cars: Car[] }) {
   const rows: [string, (c: Car) => string][] = [
     ["Cena", (c) => money(c.price)],
     ["Wynik opłacalności", (c) => `${scoreCar(c, cars).total} / 100`],
+    ["Snapshot", (c) => c.snapshotDate || "Nie dotyczy"],
+    ["Aktywność", (c) => (c.isDemo ? "Oferta fikcyjna" : "Niezweryfikowana")],
+    [
+      "Przebieg — uwagi",
+      (c) =>
+        scoreCar(c, cars).warnings.join(" ") ||
+        "Brak automatycznych ostrzeżeń; dane niezweryfikowane",
+    ],
+    ["Silnik", (c) => c.engine || "Brak danych"],
     ["Rok produkcji", (c) => String(c.year)],
     ["Przebieg", (c) => `${number(c.mileage)} km`],
-    ["Paliwo", (c) => c.fuel],
-    ["Skrzynia biegów", (c) => c.gearbox],
-    ["Nadwozie", (c) => c.body],
+    ["Paliwo", (c) => c.fuel || "Brak danych"],
+    ["Skrzynia biegów", (c) => c.gearbox || "Brak danych"],
+    ["Nadwozie", (c) => c.body || "Brak danych"],
     ["Moc", (c) => (c.power ? `${c.power} KM` : "Brak danych")],
-    ["Miasto", (c) => c.city],
+    ["Miasto", (c) => c.city || "Brak danych"],
     [
       "Historia serwisowa",
       (c) =>
@@ -36,10 +45,7 @@ export function Comparison({ cars }: { cars: Car[] }) {
             ? "Zadeklarowana"
             : "Brak potwierdzenia",
     ],
-    [
-      "Źródło",
-      (c) => (c.isDemo ? "FIKCYJNA OFERTA" : "Import CSV · niezweryfikowana"),
-    ],
+    ["Źródło", (c) => sourceLabel(c)],
   ];
   return (
     <section className="shell compare-page">
@@ -89,7 +95,7 @@ export function Comparison({ cars }: { cars: Car[] }) {
                         </button>
                         <CarArt brand={c.brand} variant={i} />
                         <span className="demo-tag inline">
-                          {c.isDemo ? "FIKCYJNA OFERTA" : "IMPORT CSV"}
+                          {sourceLabel(c)}
                         </span>
                         <Link href={`/oferta/${c.id}`}>
                           {c.brand} {c.model}

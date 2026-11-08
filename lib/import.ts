@@ -64,7 +64,7 @@ export function fingerprint(c: {
   year: number;
   price: number;
   mileage: number;
-  city: string;
+  city: string | null;
   isDemo: boolean;
 }) {
   return createHash("sha256")

@@ -14,7 +14,13 @@ export function ImportForm() {
     [details, setDetails] = useState<string[]>([]),
     [result, setResult] = useState<{
       added: number;
-      duplicates: number;
+      duplicates?: number;
+      unchanged?: number;
+      updated?: number;
+      saved?: number;
+      rejected?: number;
+      errors?: { message: string; id?: string; index?: number }[];
+      warnings?: { message: string; id?: string }[];
     } | null>(null),
     [consent, setConsent] = useState(false);
   async function submit(e: FormEvent) {
@@ -23,11 +29,12 @@ export function ImportForm() {
     setError("");
     setDetails([]);
     if (!file) {
-      setError("Wybierz plik CSV.");
+      setError("Wybierz plik CSV lub JSON.");
       return;
     }
-    if (file.size > 1024 * 1024) {
-      setError("Plik jest większy niż 1 MB.");
+    const isJson = file.name.toLowerCase().endsWith(".json");
+    if (file.size > (isJson ? 10 : 1) * 1024 * 1024) {
+      setError(`Maksymalny rozmiar pliku to ${isJson ? 10 : 1} MB.`);
       return;
     }
     setBusy(true);
@@ -35,7 +42,9 @@ export function ImportForm() {
       const response = await fetch("/api/import", {
         method: "POST",
         headers: {
-          "Content-Type": "text/csv; charset=utf-8",
+          "Content-Type": isJson
+            ? "application/json"
+            : "text/csv; charset=utf-8",
           ...(token ? { Authorization: `Bearer ${token}` } : {}),
         },
         body: await file.text(),
@@ -43,7 +52,11 @@ export function ImportForm() {
       const data = await response.json();
       if (!response.ok) {
         setError(data.error || "Import nie powiódł się.");
-        setDetails(data.errors || []);
+        setDetails(
+          (data.errors || []).map((e: string | { message: string }) =>
+            typeof e === "string" ? e : e.message,
+          ),
+        );
       } else setResult(data);
     } catch {
       setError(
@@ -61,12 +74,14 @@ export function ImportForm() {
       </h2>
       <label className="upload-zone">
         <Upload size={30} />
-        <b>{file ? file.name : "Wybierz plik CSV"}</b>
-        <span>UTF-8 · przecinek lub średnik · maks. 1 MB / 500 ofert</span>
+        <b>{file ? file.name : "Wybierz plik CSV lub JSON"}</b>
+        <span>
+          CSV: 1 MB / 500 ofert · JSON snapshot: 10 MB / 100 000 ofert
+        </span>
         <input
-          aria-label="Plik CSV"
+          aria-label="Plik CSV lub JSON"
           type="file"
-          accept=".csv,text/csv"
+          accept=".csv,.json,text/csv,application/json"
           onChange={(e) => {
             setFile(e.target.files?.[0] || null);
             setResult(null);
@@ -94,7 +109,9 @@ export function ImportForm() {
         />
         <span>
           Mam prawo do wykorzystania tych danych. Oznaczyłem fikcyjne oferty
-          jako <code>isDemo=true</code>. Plik nie zawiera danych osobowych.
+          jako <code>isDemo=true</code>. Plik nie zawiera danych osobowych. JSON
+          snapshot zawiera historyczne dane ofert, nie potwierdzenie ich
+          aktywności.
         </span>
       </label>
       <button
@@ -123,8 +140,41 @@ export function ImportForm() {
           <div>
             <b>Import zakończony</b>
             <p>
-              Dodano: {result.added}. Pominięte duplikaty: {result.duplicates}.
+              Dodano: {result.added}. Pominięte duplikaty:{" "}
+              {result.duplicates ?? result.unchanged ?? 0}.
             </p>
+            {result.saved !== undefined && (
+              <p>
+                Zapisanych / obecnych: {result.saved}. Aktualizacje:{" "}
+                {result.updated}. Odrzucone: {result.rejected}.
+              </p>
+            )}
+            {!!result.errors?.length && (
+              <details open>
+                <summary>Błędy ({result.errors.length})</summary>
+                <ul>
+                  {result.errors.map((e, i) => (
+                    <li key={i}>
+                      {e.id ||
+                        (e.index !== undefined ? `Wiersz ${e.index + 1}` : "")}
+                      : {e.message}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
+            {!!result.warnings?.length && (
+              <details>
+                <summary>Ostrzeżenia ({result.warnings.length})</summary>
+                <ul>
+                  {result.warnings.map((e, i) => (
+                    <li key={i}>
+                      {e.id}: {e.message}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
             <a href="/">
               Zobacz oferty <ArrowRight size={15} />
             </a>

@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import {
   BRANDS,
+  brandKey,
   BODIES,
   FUELS,
   GEARBOXES,
@@ -33,6 +34,13 @@ export function Catalog({
   favoritesOnly?: boolean;
 }) {
   const { favorites, ready } = useGarage();
+  const [category, setCategory] = useState(
+    favoritesOnly ? "all" : cars.some((c) => !c.isDemo) ? "market" : "demo",
+  );
+  const [limit, setLimit] = useState(24);
+  const categoryCars = cars.filter(
+    (c) => category === "all" || (category === "demo" ? c.isDemo : !c.isDemo),
+  );
   const [filters, setFilters] = useState<Filters>(
       favoritesOnly
         ? {
@@ -50,9 +58,11 @@ export function Catalog({
     setFilters((prev) => ({ ...prev, [key]: value }));
   const models = [
     ...new Set(
-      cars
+      categoryCars
         .filter(
-          (c) => !filters.brands.length || filters.brands.includes(c.brand),
+          (c) =>
+            !filters.brands.length ||
+            filters.brands.includes(brandKey(c.brand)),
         )
         .map((c) => c.model),
     ),
@@ -60,7 +70,9 @@ export function Catalog({
   const filtered = useMemo(() => {
     const scored = new Map(cars.map((c) => [c.id, scoreCar(c, cars).total]));
     return filterCars(
-      favoritesOnly ? cars.filter((c) => favorites.includes(c.id)) : cars,
+      favoritesOnly
+        ? categoryCars.filter((c) => favorites.includes(c.id))
+        : categoryCars,
       filters,
     ).sort((a, b) =>
       sort === "price-asc"
@@ -73,7 +85,7 @@ export function Catalog({
               ? b.year - a.year
               : scored.get(b.id)! - scored.get(a.id)! || a.price - b.price,
     );
-  }, [cars, filters, sort, favoritesOnly, favorites]);
+  }, [cars, filters, sort, favoritesOnly, favorites, category]);
   const invalid =
     (filters.minPrice &&
       filters.maxPrice &&
@@ -151,12 +163,13 @@ export function Catalog({
       <div className="shell">
         <div className="demo-banner">
           <span className="demo-dot" />
-          <b>Wersja demonstracyjna</b>
+          <b>Snapshot rynku PL</b>
           <span>
-            40 fikcyjnych ofert testowych. Import CSV jest oznaczony osobno.
-            Żadna oferta nie jest zweryfikowana.
+            {cars.filter((c) => c.source === "otomoto").length} ofert OTOMOTO z
+            pliku · 40 ofert demo w oddzielnej kategorii. Aktywność ogłoszeń nie
+            została zweryfikowana.
           </span>
-          <span className="demo-pill">DEMO</span>
+          <span className="demo-pill">NIEZWERYFIKOWANE</span>
         </div>
       </div>
       <section className="shell catalog" id="oferty">
@@ -185,29 +198,32 @@ export function Catalog({
             <fieldset>
               <legend>Marka</legend>
               <div className="brand-options">
-                {[...new Set([...BRANDS, ...cars.map((c) => c.brand)])].map(
-                  (b) => (
-                    <label
-                      key={b}
-                      className={filters.brands.includes(b) ? "checked" : ""}
-                    >
-                      <input
-                        type="checkbox"
-                        checked={filters.brands.includes(b)}
-                        onChange={() =>
-                          setFilters((prev) => ({
-                            ...prev,
-                            model: "",
-                            brands: prev.brands.includes(b)
-                              ? prev.brands.filter((v) => v !== b)
-                              : [...prev.brands, b],
-                          }))
-                        }
-                      />
-                      <span>{b}</span>
-                    </label>
-                  ),
-                )}
+                {[
+                  ...new Set([
+                    ...BRANDS,
+                    ...cars.map((c) => brandKey(c.brand)),
+                  ]),
+                ].map((b) => (
+                  <label
+                    key={b}
+                    className={filters.brands.includes(b) ? "checked" : ""}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={filters.brands.includes(b)}
+                      onChange={() =>
+                        setFilters((prev) => ({
+                          ...prev,
+                          model: "",
+                          brands: prev.brands.includes(b)
+                            ? prev.brands.filter((v) => v !== b)
+                            : [...prev.brands, b],
+                        }))
+                      }
+                    />
+                    <span>{b}</span>
+                  </label>
+                ))}
               </div>
               <small>Bez zaznaczenia — wszystkie marki</small>
             </fieldset>
@@ -358,6 +374,49 @@ export function Catalog({
           </div>
         </aside>
         <div className="results" id="wyniki">
+          <div
+            className="source-tabs"
+            role="group"
+            aria-label="Kategoria ofert"
+          >
+            {[
+              [
+                "market",
+                `Oferty z plików (${cars.filter((c) => !c.isDemo).length})`,
+              ],
+              ["demo", `Demo (${cars.filter((c) => c.isDemo).length})`],
+              ...(favoritesOnly ? [["all", "Wszystkie ulubione"]] : []),
+            ].map(([key, label]) => (
+              <button
+                className={category === key ? "selected" : ""}
+                aria-pressed={category === key}
+                key={key}
+                onClick={() => {
+                  setCategory(key);
+                  setFilters(prev=>({...prev,model:""}));
+                  setLimit(24);
+                }}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+          {!favoritesOnly && category === "market" && (
+            <p className="snapshot-note">
+              To dane ze snapshotu, nie lista potwierdzonych aktywnych ogłoszeń.
+              Brak danych o paliwie lub nadwoziu nie pasuje do filtrów tych
+              cech.{" "}
+              <button
+                className="text-button"
+                onClick={() => {
+                  clear();
+                  setLimit(24);
+                }}
+              >
+                Pokaż cały snapshot
+              </button>
+            </p>
+          )}
           <div className="search-row">
             <label className="search-input">
               <Search size={19} />
@@ -458,7 +517,7 @@ export function Catalog({
             </div>
           ) : filtered.length ? (
             <div className="car-grid">
-              {filtered.map((c, i) => (
+              {filtered.slice(0, limit).map((c, i) => (
                 <CarCard key={c.id} car={c} all={cars} index={i} />
               ))}
             </div>
@@ -479,6 +538,15 @@ export function Catalog({
                 Wyczyść filtry
               </button>
             </div>
+          )}
+          {filtered.length > limit && (
+            <button
+              className="button load-more"
+              onClick={() => setLimit((v) => v + 24)}
+            >
+              Pokaż kolejne {Math.min(24, filtered.length - limit)} ofert (
+              {Math.min(limit, filtered.length)}/{filtered.length})
+            </button>
           )}
           <div className="results-foot">
             <ShieldCheck size={16} />

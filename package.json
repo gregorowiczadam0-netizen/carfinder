@@ -8,9 +8,10 @@
     "start": "next start --hostname 0.0.0.0",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "db:setup": "tsx scripts/setup-db.ts && tsx scripts/seed.ts",
+    "db:setup": "tsx scripts/setup-db.ts && tsx scripts/seed.ts && tsx scripts/import-json.ts datasets/carfinder-rynek-pl.json",
     "db:seed": "tsx scripts/seed.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "db:import:json": "tsx scripts/import-json.ts"
   },
   "dependencies": {
     "dotenv": "^18.0.9",

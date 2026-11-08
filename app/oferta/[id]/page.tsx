@@ -1,9 +1,11 @@
+import { modelProfile } from "@/lib/market-db";
+import { ModelInsights } from "@/components/model-insights";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, MapPin, Info } from "lucide-react";
 import { listings } from "@/lib/db";
 import { scoreCar } from "@/lib/score";
-import { money, number } from "@/lib/catalog";
+import { money, number, sourceLabel } from "@/lib/catalog";
 import { CarArt } from "@/components/car-art";
 import { DetailActions } from "@/components/detail-actions";
 export const dynamic = "force-dynamic";
@@ -17,12 +19,14 @@ export default async function Detail({
   if (!car) notFound();
   const all = await listings.all();
   const score = scoreCar(car, all);
+  const profile = modelProfile(car.modelProfileId);
   const specs = [
     ["Rok produkcji", car.year],
     ["Przebieg", `${number(car.mileage)} km`],
-    ["Paliwo", car.fuel],
-    ["Skrzynia biegów", car.gearbox],
-    ["Nadwozie", car.body],
+    ["Paliwo", car.fuel || "Brak danych"],
+    ["Skrzynia biegów", car.gearbox || "Brak danych"],
+    ["Nadwozie", car.body || "Brak danych"],
+    ["Silnik", car.engine || "Brak danych"],
     ["Moc silnika", car.power ? `${car.power} KM` : "Brak danych"],
     [
       "Historia serwisowa",
@@ -50,11 +54,7 @@ export default async function Detail({
       <div className="detail-grid">
         <div>
           <div className="detail-art">
-            <span className="demo-tag">
-              {car.isDemo
-                ? "FIKCYJNA OFERTA TESTOWA"
-                : "IMPORT CSV · DANE NIEZWERYFIKOWANE"}
-            </span>
+            <span className="demo-tag">{sourceLabel(car)}</span>
             <CarArt brand={car.brand} hero />
             <span className="illustration">
               Autorska ilustracja poglądowa, nie zdjęcie samochodu
@@ -78,10 +78,13 @@ export default async function Detail({
               Źródło:{" "}
               {car.source === "demo"
                 ? "fikcyjne dane demonstracyjne"
-                : "ręczny import CSV"}{" "}
+                : car.source === "otomoto"
+                  ? "OTOMOTO — plik JSON użytkownika"
+                  : "ręczny import CSV"}{" "}
               · ID: {car.externalId || car.id}
             </p>
           </div>
+          {profile && <ModelInsights {...profile} />}
         </div>
         <aside>
           <div className="panel detail-summary">
@@ -94,10 +97,26 @@ export default async function Detail({
             <p>{car.trim}</p>
             <span className="location">
               <MapPin size={15} />
-              {car.city}
+              {car.city || "Miasto: brak danych"}
             </span>
             <strong className="detail-price">{money(car.price)}</strong>
             <DetailActions id={car.id} />
+            {car.sourceUrl && (
+              <>
+                <a
+                  className="button primary source-link"
+                  href={car.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Zobacz ogłoszenie na OTOMOTO ↗
+                </a>
+                <p className="quality-warning">
+                  Aktywność ogłoszenia nie została zweryfikowana. Snapshot:{" "}
+                  {car.snapshotDate}. Link może prowadzić do nieaktywnej oferty.
+                </p>
+              </>
+            )}
             <div className="info-box">
               <Info size={18} />
               <p>
@@ -124,6 +143,16 @@ export default async function Detail({
                 ? "Porównanie wyłącznie z fikcyjnymi ofertami."
                 : "Oferty demo wyłączono z próby."}
             </p>
+            {score.capReason && (
+              <p className="quality-warning">
+                {score.capReason} Suma surowa: {score.rawTotal}/100.
+              </p>
+            )}
+            {score.warnings.map((w) => (
+              <p className="quality-warning" key={w}>
+                {w}
+              </p>
+            ))}
             {score.criteria.map((c) => (
               <div className="criterion" key={c.label}>
                 <div>

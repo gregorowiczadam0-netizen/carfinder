@@ -9,7 +9,7 @@ import {
   Gauge,
   CalendarDays,
 } from "lucide-react";
-import { type Car, money, number } from "@/lib/catalog";
+import { type Car, money, number, sourceLabel } from "@/lib/catalog";
 import { scoreCar } from "@/lib/score";
 import { useGarage } from "./garage";
 import { CarArt } from "./car-art";
@@ -29,9 +29,7 @@ export function CarCard({
   return (
     <article className="car-card">
       <div className={`card-image scene-${index % 4}`}>
-        <span className="demo-tag">
-          {car.isDemo ? "FIKCYJNA OFERTA" : "IMPORT CSV · NIEZWERYFIKOWANA"}
-        </span>
+        <span className="demo-tag">{sourceLabel(car)}</span>
         <button
           className={`heart ${fav ? "active" : ""}`}
           aria-label={`${fav ? "Usuń z" : "Dodaj do"} ulubionych: ${car.brand} ${car.model}`}
@@ -56,7 +54,7 @@ export function CarCard({
                 {car.brand} {car.model}
               </h3>
             </Link>
-            <p>{car.trim || car.body}</p>
+            <p>{car.trim || car.body || "Wersja i nadwozie: brak danych"}</p>
           </div>
           <ArrowUpRight size={19} />
         </div>
@@ -71,16 +69,26 @@ export function CarCard({
           </span>
           <span>
             <Fuel />
-            {car.fuel}
+            {car.fuel || "Paliwo: brak danych"}
           </span>
         </div>
         <div className="card-price">
           <strong>{money(car.price)}</strong>
           <span className="location">
             <MapPin size={13} />
-            {car.city}
+            {car.city || "Miasto: brak danych"}
           </span>
         </div>
+        {car.snapshotDate && (
+          <p className="snapshot-note">
+            Snapshot: {car.snapshotDate} · Aktywność niezweryfikowana
+          </p>
+        )}
+        {score.warnings.map((w) => (
+          <p className="quality-warning" key={w}>
+            Przebieg do sprawdzenia
+          </p>
+        ))}
         <div className="card-bottom">
           <Link
             href={`/oferta/${car.id}#ocena`}
@@ -95,7 +103,7 @@ export function CarCard({
               {score.total}
             </span>
             <span>
-              Opłacalność <small>/ 100 · wstępna</small>
+              Opłacalność <small>/ 100 · {score.confidence} pewność</small>
             </span>
           </Link>
           <button

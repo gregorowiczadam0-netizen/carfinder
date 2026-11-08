@@ -12,7 +12,9 @@ mkdirSync(dirname(path), { recursive: true });
 const globalDb = globalThis as unknown as { carfinderDb?: DatabaseSync };
 export const sqlite = globalDb.carfinderDb ?? new DatabaseSync(path);
 globalDb.carfinderDb = sqlite;
-sqlite.exec("PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;");
+sqlite.exec(
+  "PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;",
+);
 type DbCar = Omit<Car, "serviceHistory" | "accidentFree" | "isDemo"> & {
   serviceHistory: number | null;
   accidentFree: number | null;

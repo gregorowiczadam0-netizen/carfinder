@@ -1,6 +1,6 @@
 import { ImportForm } from "@/components/import-form";
 import { Download, ShieldCheck } from "lucide-react";
-export const metadata = { title: "Import CSV" };
+export const metadata = { title: "Import CSV i JSON" };
 export default function ImportPage() {
   return (
     <section className="shell">
@@ -17,7 +17,16 @@ export default function ImportPage() {
       <div className="import-grid">
         <ImportForm />
         <aside className="panel import-help">
-          <h2>Przygotuj swój plik</h2>
+          <h2>Import snapshotu JSON</h2>
+          <p>
+            JSON łączy offers z models przez model_id. Wymaga snapshot_date,
+            market=PL, currency=PLN, scope_pl i scenario. Importuje poprawne
+            rekordy mimo błędów innych wierszy; błędy i ostrzeżenia pokazuje
+            raport. Deduplikacja: źródło OTOMOTO + id oferty. Nowszy snapshot
+            aktualizuje istniejącą ofertę; starszy jej nie nadpisuje. Paliwo i
+            example_engine w models nie są cechami egzemplarza.
+          </p>
+          <h2>Przygotuj plik CSV</h2>
           <p>
             Każdy wiersz to jedna oferta. Nazwy kolumn pozostają po angielsku;
             wartości kategorii są po polsku.

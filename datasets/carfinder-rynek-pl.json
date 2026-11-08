@@ -1,0 +1,6506 @@
+{
+ "snapshot_date": "2026-11-08",
+ "market": "PL",
+ "currency": "PLN",
+ "scope_pl": "OTOMOTO, używane, domyślny filtr nieuszkodzonych, wszystkie nadwozia i silniki w rocznikach wiersza, cena ofertowa 10000–20000 PLN włącznie. Kwartyle liniowe zaokrąglone do złotego. Liczebność opisuje podaż.",
+ "scenario": {
+  "km_per_year": 10000,
+  "pln_per_litre": 6.5,
+  "description_pl": "Przykładowe zużycie paliwa dla silnika z tabeli, własny scenariusz na podstawie raportów użytkowników. 800 PLN na jedną wymianę oleju i filtrów, założenie budżetowe. Poza sumą: OC, badanie, opony, hamulce, awarie, utrata wartości i opłaty zakupu.",
+  "service_source": "https://mechaniktu.pl/cennik/wymiana-oleju-i-filtrow/"
+ },
+ "models": [
+  {
+   "id": "seria-3",
+   "make": "BMW",
+   "model": "Seria 3",
+   "year_from": 2006,
+   "year_to": 2011,
+   "offer_count": 368,
+   "offers_reported_1_to_200000_km": 57,
+   "price_q1_pln": 13500,
+   "price_median_pln": 15900,
+   "price_q3_pln": 18000,
+   "example_engine": "320d N47",
+   "fuel": "ON",
+   "scenario_l_per_100km": 6.8,
+   "annual_fuel_pln": 4420,
+   "annual_oil_filters_budget_pln": 800,
+   "annual_fuel_plus_oil_filters_pln": 5220,
+   "inspection_points_pl": "Zużycie łańcucha rozrządu w N47",
+   "price_factors_pl": "Faktura za kompletną wymianę rozrządu i potwierdzenie kodu silnika",
+   "technical_sources": [
+    "https://motoryzacja.interia.pl/samochody-uzywane/news-uzywane-bmw-3-e90-koszty-usterki-polecane-wersje%2CnId%2C7092575/viewport/desktop/preview/0/iplv3/0/x-request-id/44DD4B1ED182D94A479301BB68BF08B765A0B51E03"
+   ],
+   "fuel_source": "https://www.autocentrum.pl/spalanie/bmw/seria-3/e90-91-92-93/coupe-e92/silnik-diesla-320d-177km-2006-2010/"
+  },
+  {
+   "id": "seria-5",
+   "make": "BMW",
+   "model": "Seria 5",
+   "year_from": 2004,
+   "year_to": 2009,
+   "offer_count": 168,
+   "offers_reported_1_to_200000_km": 4,
+   "price_q1_pln": 14187,
+   "price_median_pln": 16450,
+   "price_q3_pln": 18900,
+   "example_engine": "530d M57",
+   "fuel": "ON",
+   "scenario_l_per_100km": 8.5,
+   "annual_fuel_pln": 5525,
+   "annual_oil_filters_budget_pln": 800,
+   "annual_fuel_plus_oil_filters_pln": 6325,
+   "inspection_points_pl": "Luźne klapy dolotu; zużycie konwertera w automacie",
+   "price_factors_pl": "Stan kolektora i płynność pracy automatu po rozgrzaniu",
+   "technical_sources": [
+    "https://motoryzacja.interia.pl/samochody-uzywane/news-uzywane-bmw-530i-bmw-530d-e60%2CnId%2C1064843"
+   ],
+   "fuel_source": "https://www.autocentrum.pl/spalanie/bmw/seria-5/e60/sedan/silnik-diesla-3.0-530d-218km-2003-2005/"
+  },
+  {
+   "id": "klasa-c",
+   "make": "Mercedes-Benz",
+   "model": "Klasa C",
+   "year_from": 2001,
+   "year_to": 2006,
+   "offer_count": 62,
+   "offers_reported_1_to_200000_km": 16,
+   "price_q1_pln": 11925,
+   "price_median_pln": 14000,
+   "price_q3_pln": 16000,
+   "example_engine": "C 180 Kompressor 1.8 M271",
+   "fuel": "Pb95",
+   "scenario_l_per_100km": 8.6,
+   "annual_fuel_pln": 5590,
+   "annual_oil_filters_budget_pln": 800,
+   "annual_fuel_plus_oil_filters_pln": 6390,
+   "inspection_points_pl": "Korozja blach, zwłaszcza we wczesnych egzemplarzach; zużycie napędu rozrządu M271",
+   "price_factors_pl": "Stan blacharski i dokumentacja rozrządu",
+   "technical_sources": [
+    "https://motoryzacja.interia.pl/porady/news-typowe-usterki-z-sieci%2CnId%2C1421416",
+    "https://pulsecar.pl/pl/poradnik/mercedes-usterki-slabe-punkty"
+   ],
+   "fuel_source": "https://www.autocentrum.pl/mercedes/klasa-c/w203/sedan-w203/silnik-benzynowy-1.8-c-180-kompressor-143km-2002-2007/"
+  },
+  {
+   "id": "klasa-e",
+   "make": "Mercedes-Benz",
+   "model": "Klasa E",
+   "year_from": 2003,
+   "year_to": 2008,
+   "offer_count": 110,
+   "offers_reported_1_to_200000_km": 8,
+   "price_q1_pln": 13925,
+   "price_median_pln": 16500,
+   "price_q3_pln": 18500,
+   "example_engine": "E 220 CDI",
+   "fuel": "ON",
+   "scenario_l_per_100km": 7.5,
+   "annual_fuel_pln": 4875,
+   "annual_oil_filters_budget_pln": 800,
+   "annual_fuel_plus_oil_filters_pln": 5675,
+   "inspection_points_pl": "Układ hamulcowy SBC przed liftingiem; nieszczelności pneumatyki w autach z takim zawieszeniem",
+   "price_factors_pl": "Wersja przed lub po liftingu, wyposażenie i potwierdzone naprawy",
+   "technical_sources": [
+    "https://proauto.ba/odrzavanje-polovnog-mercedesa-e220-cdi-e270-cdi-e320-cdi-w211-2002-2007/"
+   ],
+   "fuel_source": "https://www.autocentrum.pl/spalanie/mercedes/klasa-e/w211/sedan-w211/silnik-diesla-2.1-220-cdi-150km-2002-2006/"
+  },
+  {
+   "id": "x-type",
+   "make": "Jaguar",
+   "model": "X-Type",
+   "year_from": 2001,
+   "year_to": 2009,
+   "offer_count": 6,
+   "offers_reported_1_to_200000_km": 3,
+   "price_q1_pln": 11163,
+   "price_median_pln": 11975,
+   "price_q3_pln": 12675,
+   "example_engine": "2.5 V6 AWD",
+   "fuel": "Pb95",
+   "scenario_l_per_100km": 11.5,
+   "annual_fuel_pln": 7475,
+   "annual_oil_filters_budget_pln": 800,
+   "annual_fuel_plus_oil_filters_pln": 8275,
+   "inspection_points_pl": "Korozja podwozia; hałas lub wibracje przekładni rozdzielczej AWD",
+   "price_factors_pl": "Stan podwozia na podnośniku i wynik kontroli napędu 4×4",
+   "technical_sources": [
+    "https://jaguarclubpoland.net/forum/index.php?topic=19330.0",
+    "https://bazajlr.pl/blog/co-sprawdzic-przed-zakupem-uzywanego-jaguara/"
+   ],
+   "fuel_source": "https://www.autocentrum.pl/spalanie/jaguar/x-type/sedan/silnik-benzynowy-2.5-i-v6-24v-197km-2001-2009/"
+  },
+  {
+   "id": "s-type",
+   "make": "Jaguar",
+   "model": "S-Type",
+   "year_from": 1999,
+   "year_to": 2007,
+   "offer_count": 9,
+   "offers_reported_1_to_200000_km": 6,
+   "price_q1_pln": 12000,
+   "price_median_pln": 15500,
+   "price_q3_pln": 17900,
+   "example_engine": "3.0 V6",
+   "fuel": "Pb95",
+   "scenario_l_per_100km": 12,
+   "annual_fuel_pln": 7800,
+   "annual_oil_filters_budget_pln": 800,
+   "annual_fuel_plus_oil_filters_pln": 8600,
+   "inspection_points_pl": "Zużyte sworznie i tuleje zawieszenia; usterki elektrycznego hamulca postojowego w wersjach z tym układem",
+   "price_factors_pl": "Stan zawieszenia i sprawność tylnych hamulców",
+   "technical_sources": [
+    "https://www.autocentrum.pl/publikacje/testy-aut-uzywanych/czy-warto-kupic-uzywany-jaguar-s-type-od-1999-do-2008/"
+   ],
+   "fuel_source": "https://www.autocentrum.pl/spalanie/jaguar/s-type/silnik-benzynowy-3.0-i-v6-24v-240km-1998-2008/"
+  },
+  {
+   "id": "s40",
+   "make": "Volvo",
+   "model": "S40",
+   "year_from": 2005,
+   "year_to": 2012,
+   "offer_count": 42,
+   "offers_reported_1_to_200000_km": 10,
+   "price_q1_pln": 12563,
+   "price_median_pln": 14999,
+   "price_q3_pln": 16725,
+   "example_engine": "1.8 125 KM",
+   "fuel": "Pb95",
+   "scenario_l_per_100km": 8.5,
+   "annual_fuel_pln": 5525,
+   "annual_oil_filters_budget_pln": 800,
+   "annual_fuel_plus_oil_filters_pln": 6325,
+   "inspection_points_pl": "Zużycie tulei zawieszenia i amortyzatorów",
+   "price_factors_pl": "Stan osi i zakres udokumentowanych napraw podwozia",
+   "technical_sources": [
+    "https://selected.pl/typowe-usterki-volvo-s40-ii-2004-2012-1-8-r4-opinie-problemy-przy-zakupie-i-wady-modelu/"
+   ],
+   "fuel_source": "https://www.autocentrum.pl/spalanie/volvo/s40/ii/silnik-benzynowy-1.8-i-125km-2004-2010/"
+  },
+  {
+   "id": "s60",
+   "make": "Volvo",
+   "model": "S60",
+   "year_from": 2001,
+   "year_to": 2009,
+   "offer_count": 22,
+   "offers_reported_1_to_200000_km": 3,
+   "price_q1_pln": 14000,
+   "price_median_pln": 16900,
+   "price_q3_pln": 19650,
+   "example_engine": "2.4 170 KM",
+   "fuel": "Pb95",
+   "scenario_l_per_100km": 10,
+   "annual_fuel_pln": 6500,
+   "annual_oil_filters_budget_pln": 800,
+   "annual_fuel_plus_oil_filters_pln": 7300,
+   "inspection_points_pl": "Niedrożna odma i wycieki oleju",
+   "price_factors_pl": "Historia obsługi silnika i stan uszczelnień",
+   "technical_sources": [
+    "https://selected.pl/typowe-usterki-silnika-volvo-2-4-benzyna-o-mocy-170-km/"
+   ],
+   "fuel_source": "https://www.autocentrum.pl/spalanie/volvo/s60/i/silnik-benzynowy-2.4-i-20v-170km-2000-2010/"
+  }
+ ],
+ "offers": [
+  {
+   "model_id": "seria-3",
+   "id": "6151080158",
+   "year": 2009,
+   "asking_price_pln": 13000,
+   "mileage_km": 337719,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhiVi.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151578405",
+   "year": 2007,
+   "asking_price_pln": 18300,
+   "mileage_km": 233680,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijoyx.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151567119",
+   "year": 2006,
+   "asking_price_pln": 13500,
+   "mileage_km": 240000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjlCw.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149646056",
+   "year": 2006,
+   "asking_price_pln": 12900,
+   "mileage_km": 278131,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IbhRC.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149546942",
+   "year": 2006,
+   "asking_price_pln": 10800,
+   "mileage_km": 336000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IaS50.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151552495",
+   "year": 2008,
+   "asking_price_pln": 14900,
+   "mileage_km": 347000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjhOD.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150398622",
+   "year": 2009,
+   "asking_price_pln": 18800,
+   "mileage_km": 332000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IerDM.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150363649",
+   "year": 2006,
+   "asking_price_pln": 14500,
+   "mileage_km": 212800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IeixH.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6147897934",
+   "year": 2008,
+   "asking_price_pln": 16900,
+   "mileage_km": 306000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I3X66.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151512234",
+   "year": 2007,
+   "asking_price_pln": 14900,
+   "mileage_km": 280300,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ij7lg.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151076009",
+   "year": 2009,
+   "asking_price_pln": 18700,
+   "mileage_km": 207460,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhhRn.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151510353",
+   "year": 2010,
+   "asking_price_pln": 17700,
+   "mileage_km": 201000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ij6QW.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151507916",
+   "year": 2006,
+   "asking_price_pln": 12900,
+   "mileage_km": 240000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ij6dC.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151505900",
+   "year": 2009,
+   "asking_price_pln": 17900,
+   "mileage_km": 277900,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ij5H6.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150592635",
+   "year": 2010,
+   "asking_price_pln": 15900,
+   "mileage_km": 268644,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ifg71.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148989004",
+   "year": 2008,
+   "asking_price_pln": 19000,
+   "mileage_km": 293000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I8vV0.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151482614",
+   "year": 2007,
+   "asking_price_pln": 12600,
+   "mileage_km": 357000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiZDv.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151482370",
+   "year": 2011,
+   "asking_price_pln": 15990,
+   "mileage_km": 281110,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiZzA.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151465803",
+   "year": 2010,
+   "asking_price_pln": 18500,
+   "mileage_km": 327000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiWgn.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151089794",
+   "year": 2007,
+   "asking_price_pln": 12000,
+   "mileage_km": 351965,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhlrI.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151449377",
+   "year": 2009,
+   "asking_price_pln": 16000,
+   "mileage_km": 305000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiQZr.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151582888",
+   "year": 2008,
+   "asking_price_pln": 18900,
+   "mileage_km": 143898,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjpIQ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151045605",
+   "year": 2009,
+   "asking_price_pln": 16700,
+   "mileage_km": 306500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ih9VZ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151206887",
+   "year": 2007,
+   "asking_price_pln": 12500,
+   "mileage_km": 253302,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhPUj.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151169081",
+   "year": 2006,
+   "asking_price_pln": 16900,
+   "mileage_km": 188558,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhG4x.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151550449",
+   "year": 2010,
+   "asking_price_pln": 16000,
+   "mileage_km": 222756,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjhhD.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151018276",
+   "year": 2008,
+   "asking_price_pln": 15500,
+   "mileage_km": 323432,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ih2Qc.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151581690",
+   "year": 2007,
+   "asking_price_pln": 15900,
+   "mileage_km": 309000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijppv.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151202619",
+   "year": 2006,
+   "asking_price_pln": 14900,
+   "mileage_km": 310000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhONt.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151322270",
+   "year": 2008,
+   "asking_price_pln": 16700,
+   "mileage_km": 229200,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IijWk.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151167012",
+   "year": 2006,
+   "asking_price_pln": 19900,
+   "mileage_km": 180000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhFxa.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151333574",
+   "year": 2007,
+   "asking_price_pln": 18999,
+   "mileage_km": 333504,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IimRE.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149456605",
+   "year": 2009,
+   "asking_price_pln": 17999,
+   "mileage_km": 276000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IauzX.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151320092",
+   "year": 2010,
+   "asking_price_pln": 15900,
+   "mileage_km": 278000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iijmc.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151580296",
+   "year": 2006,
+   "asking_price_pln": 12000,
+   "mileage_km": 395000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijp32.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150528736",
+   "year": 2009,
+   "asking_price_pln": 16900,
+   "mileage_km": 284500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IeZuo.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151580013",
+   "year": 2011,
+   "asking_price_pln": 18000,
+   "mileage_km": 149304,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjoYt.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151318771",
+   "year": 2011,
+   "asking_price_pln": 15900,
+   "mileage_km": 229000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iij0T.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151318730",
+   "year": 2009,
+   "asking_price_pln": 14500,
+   "mileage_km": 278522,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iij0e.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151315583",
+   "year": 2008,
+   "asking_price_pln": 10990,
+   "mileage_km": 263000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iiibt.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151579664",
+   "year": 2006,
+   "asking_price_pln": 11500,
+   "mileage_km": 245000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjoSQ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151411125",
+   "year": 2006,
+   "asking_price_pln": 11000,
+   "mileage_km": 240000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiH2t.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150649827",
+   "year": 2007,
+   "asking_price_pln": 15900,
+   "mileage_km": 270000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfuZt.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150353923",
+   "year": 2011,
+   "asking_price_pln": 12500,
+   "mileage_km": 320000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ieg0P.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148019655",
+   "year": 2011,
+   "asking_price_pln": 14000,
+   "mileage_km": 250928,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I4sLl.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6146186991",
+   "year": 2009,
+   "asking_price_pln": 14900,
+   "mileage_km": 274000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HVM0f.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151578576",
+   "year": 2006,
+   "asking_price_pln": 10900,
+   "mileage_km": 402200,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjoBi.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151464037",
+   "year": 2009,
+   "asking_price_pln": 17400,
+   "mileage_km": 258783,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiUNT.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149258362",
+   "year": 2008,
+   "asking_price_pln": 12000,
+   "mileage_km": 415000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I9F0u.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151200668",
+   "year": 2007,
+   "asking_price_pln": 15000,
+   "mileage_km": 317000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhOi0.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151576390",
+   "year": 2006,
+   "asking_price_pln": 16900,
+   "mileage_km": 187000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijo22.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149930438",
+   "year": 2006,
+   "asking_price_pln": 16900,
+   "mileage_km": 189783,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IctQq.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151358285",
+   "year": 2009,
+   "asking_price_pln": 16900,
+   "mileage_km": 159000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iitid.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148581197",
+   "year": 2007,
+   "asking_price_pln": 10990,
+   "mileage_km": 189000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I6OQt.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151301740",
+   "year": 2010,
+   "asking_price_pln": 19999,
+   "mileage_km": 173000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IieAc.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151573948",
+   "year": 2007,
+   "asking_price_pln": 18900,
+   "mileage_km": 343000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjnoE.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151571989",
+   "year": 2009,
+   "asking_price_pln": 18000,
+   "mileage_km": 202648,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjmT3.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151298129",
+   "year": 2008,
+   "asking_price_pln": 18900,
+   "mileage_km": 253000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IidDX.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151412728",
+   "year": 2010,
+   "asking_price_pln": 14900,
+   "mileage_km": 239000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiHsk.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6145864730",
+   "year": 2008,
+   "asking_price_pln": 14900,
+   "mileage_km": 287000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HWqau.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150838471",
+   "year": 2008,
+   "asking_price_pln": 10500,
+   "mileage_km": 505000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Igi47.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148724286",
+   "year": 2008,
+   "asking_price_pln": 14000,
+   "mileage_km": 250800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I7q4m.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151567186",
+   "year": 2006,
+   "asking_price_pln": 11900,
+   "mileage_km": 331000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjlDA.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151549811",
+   "year": 2006,
+   "asking_price_pln": 12400,
+   "mileage_km": 250000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijh7l.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151293630",
+   "year": 2010,
+   "asking_price_pln": 16500,
+   "mileage_km": 317000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iicto.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149726880",
+   "year": 2009,
+   "asking_price_pln": 13999,
+   "mileage_km": 245000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IbCTe.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151565911",
+   "year": 2009,
+   "asking_price_pln": 16500,
+   "mileage_km": 182807,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijlj1.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151566846",
+   "year": 2006,
+   "asking_price_pln": 11700,
+   "mileage_km": 285000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijly6.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151432407",
+   "year": 2010,
+   "asking_price_pln": 15999,
+   "mileage_km": 288724,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiMzJ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150665599",
+   "year": 2010,
+   "asking_price_pln": 15900,
+   "mileage_km": 167000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ifz5R.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151291709",
+   "year": 2008,
+   "asking_price_pln": 18500,
+   "mileage_km": 237489,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IibYp.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151565352",
+   "year": 2007,
+   "asking_price_pln": 16900,
+   "mileage_km": 192650,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijla0.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151563149",
+   "year": 2006,
+   "asking_price_pln": 10800,
+   "mileage_km": 417081,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjkAt.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149206896",
+   "year": 2007,
+   "asking_price_pln": 18900,
+   "mileage_km": 320174,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I9rCo.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151562804",
+   "year": 2007,
+   "asking_price_pln": 19900,
+   "mileage_km": 209400,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjkuU.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151382866",
+   "year": 2006,
+   "asking_price_pln": 19900,
+   "mileage_km": 125377,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IizGG.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151562450",
+   "year": 2010,
+   "asking_price_pln": 16900,
+   "mileage_km": 289061,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijkpc.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150184150",
+   "year": 2011,
+   "asking_price_pln": 19900,
+   "mileage_km": 258000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IdxQy.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150609615",
+   "year": 2009,
+   "asking_price_pln": 18900,
+   "mileage_km": 158000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfkvT.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150740518",
+   "year": 2006,
+   "asking_price_pln": 17097,
+   "mileage_km": 107000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfSAe.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150730647",
+   "year": 2010,
+   "asking_price_pln": 18900,
+   "mileage_km": 195000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfQ11.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150396670",
+   "year": 2008,
+   "asking_price_pln": 15000,
+   "mileage_km": 351455,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ier8i.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151456727",
+   "year": 2006,
+   "asking_price_pln": 18250,
+   "mileage_km": 277313,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiSTZ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151557750",
+   "year": 2007,
+   "asking_price_pln": 19500,
+   "mileage_km": 275231,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijjbo.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151422356",
+   "year": 2007,
+   "asking_price_pln": 13900,
+   "mileage_km": 325000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiJXC.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148738541",
+   "year": 2009,
+   "asking_price_pln": 10400,
+   "mileage_km": 224500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I7tMh.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151556798",
+   "year": 2007,
+   "asking_price_pln": 12900,
+   "mileage_km": 228061,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjiV2.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148716985",
+   "year": 2008,
+   "asking_price_pln": 11900,
+   "mileage_km": 219532,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I7oaB.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151550823",
+   "year": 2008,
+   "asking_price_pln": 11999,
+   "mileage_km": 240000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjhnF.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150610941",
+   "year": 2006,
+   "asking_price_pln": 12500,
+   "mileage_km": 288400,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfkSh.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150183470",
+   "year": 2007,
+   "asking_price_pln": 19000,
+   "mileage_km": 252472,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IdxFA.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151036474",
+   "year": 2006,
+   "asking_price_pln": 18500,
+   "mileage_km": 302000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ih7zI.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151188828",
+   "year": 2006,
+   "asking_price_pln": 13900,
+   "mileage_km": 228932,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhLd2.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150452266",
+   "year": 2008,
+   "asking_price_pln": 18900,
+   "mileage_km": 270000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IeFB0.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151154976",
+   "year": 2009,
+   "asking_price_pln": 14900,
+   "mileage_km": 199999,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhCp2.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148729128",
+   "year": 2006,
+   "asking_price_pln": 11500,
+   "mileage_km": 330000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I7rks.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151176210",
+   "year": 2010,
+   "asking_price_pln": 19500,
+   "mileage_km": 259159,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhHWv.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151323072",
+   "year": 2007,
+   "asking_price_pln": 16800,
+   "mileage_km": 276000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iik8g.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151369780",
+   "year": 2006,
+   "asking_price_pln": 19700,
+   "mileage_km": 261000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IivhC.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150833892",
+   "year": 2006,
+   "asking_price_pln": 19500,
+   "mileage_km": 229773,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IggSg.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151334335",
+   "year": 2006,
+   "asking_price_pln": 15900,
+   "mileage_km": 194728,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iin3W.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148621486",
+   "year": 2010,
+   "asking_price_pln": 15900,
+   "mileage_km": 259300,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I6Zki.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151181097",
+   "year": 2007,
+   "asking_price_pln": 16500,
+   "mileage_km": 219999,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhJcl.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6134023709",
+   "year": 2011,
+   "asking_price_pln": 20000,
+   "mileage_km": 284000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6H7JMh.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151183959",
+   "year": 2010,
+   "asking_price_pln": 12200,
+   "mileage_km": 388,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhJVw.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151125668",
+   "year": 2011,
+   "asking_price_pln": 12999,
+   "mileage_km": 195000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhuMk.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151268643",
+   "year": 2008,
+   "asking_price_pln": 14000,
+   "mileage_km": 250000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ii5Yn.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151266897",
+   "year": 2011,
+   "asking_price_pln": 19900,
+   "mileage_km": 175000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ii5vd.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151543434",
+   "year": 2011,
+   "asking_price_pln": 14500,
+   "mileage_km": 290000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijfsu.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151363790",
+   "year": 2009,
+   "asking_price_pln": 19800,
+   "mileage_km": 209754,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiuJ0.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150278803",
+   "year": 2007,
+   "asking_price_pln": 16500,
+   "mileage_km": 405000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IdVtd.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150947643",
+   "year": 2009,
+   "asking_price_pln": 19900,
+   "mileage_km": 92850,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgKsX.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151172786",
+   "year": 2009,
+   "asking_price_pln": 19900,
+   "mileage_km": 269000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhH2i.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151540938",
+   "year": 2006,
+   "asking_price_pln": 13900,
+   "mileage_km": 281000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjeOe.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150807502",
+   "year": 2009,
+   "asking_price_pln": 13900,
+   "mileage_km": 373000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iga0C.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6147067674",
+   "year": 2009,
+   "asking_price_pln": 19900,
+   "mileage_km": 286000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I0t6O.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151538476",
+   "year": 2008,
+   "asking_price_pln": 16000,
+   "mileage_km": 347922,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijeav.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6146724172",
+   "year": 2008,
+   "asking_price_pln": 19900,
+   "mileage_km": 227498,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HZ1Ks.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148276714",
+   "year": 2010,
+   "asking_price_pln": 18500,
+   "mileage_km": 272000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I5xDs.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151537283",
+   "year": 2011,
+   "asking_price_pln": 19900,
+   "mileage_km": 285000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjdRh.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151173003",
+   "year": 2010,
+   "asking_price_pln": 19900,
+   "mileage_km": 270523,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhH5N.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151173093",
+   "year": 2011,
+   "asking_price_pln": 17900,
+   "mileage_km": 181000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhH7f.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151524930",
+   "year": 2006,
+   "asking_price_pln": 14900,
+   "mileage_km": 272000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjaE2.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148769062",
+   "year": 2009,
+   "asking_price_pln": 12900,
+   "mileage_km": 217000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I7BIy.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148729598",
+   "year": 2009,
+   "asking_price_pln": 15500,
+   "mileage_km": 396000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I7rs2.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150948724",
+   "year": 2011,
+   "asking_price_pln": 11100,
+   "mileage_km": 312950,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgKKo.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150278957",
+   "year": 2007,
+   "asking_price_pln": 17000,
+   "mileage_km": 234000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IdVwH.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150631990",
+   "year": 2010,
+   "asking_price_pln": 15900,
+   "mileage_km": 330565,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfqlM.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150830002",
+   "year": 2009,
+   "asking_price_pln": 18900,
+   "mileage_km": 108000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgfRv.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151433776",
+   "year": 2006,
+   "asking_price_pln": 13350,
+   "mileage_km": 256962,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiMWO.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151532625",
+   "year": 2008,
+   "asking_price_pln": 13900,
+   "mileage_km": 212000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjcE9.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151532212",
+   "year": 2006,
+   "asking_price_pln": 19900,
+   "mileage_km": 311000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ijcxu.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151354711",
+   "year": 2009,
+   "asking_price_pln": 14500,
+   "mileage_km": 230000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iismz.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151321729",
+   "year": 2008,
+   "asking_price_pln": 18950,
+   "mileage_km": 252000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IijMB.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151166383",
+   "year": 2008,
+   "asking_price_pln": 20000,
+   "mileage_km": 217000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhFn1.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150976436",
+   "year": 2006,
+   "asking_price_pln": 12999,
+   "mileage_km": 230000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgRXm.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151529635",
+   "year": 2008,
+   "asking_price_pln": 13900,
+   "mileage_km": 301000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjbRW.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151346197",
+   "year": 2007,
+   "asking_price_pln": 14900,
+   "mileage_km": 250000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iiq9f.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151165767",
+   "year": 2006,
+   "asking_price_pln": 13900,
+   "mileage_km": 202000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhFd5.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150399616",
+   "year": 2011,
+   "asking_price_pln": 17600,
+   "mileage_km": 366000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IerTO.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6140958310",
+   "year": 2008,
+   "asking_price_pln": 13500,
+   "mileage_km": 325162,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HAPMG.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148756794",
+   "year": 2007,
+   "asking_price_pln": 19500,
+   "mileage_km": 273000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I7yvG.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151523977",
+   "year": 2007,
+   "asking_price_pln": 19000,
+   "mileage_km": 244611,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IjaoF.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151521770",
+   "year": 2008,
+   "asking_price_pln": 15900,
+   "mileage_km": 211000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ij9P4.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149305794",
+   "year": 2010,
+   "asking_price_pln": 17900,
+   "mileage_km": 221650,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I9Rlv.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151346120",
+   "year": 2007,
+   "asking_price_pln": 17900,
+   "mileage_km": 159604,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iiq80.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149061671",
+   "year": 2008,
+   "asking_price_pln": 13000,
+   "mileage_km": 281000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I8PQ3.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151516543",
+   "year": 2009,
+   "asking_price_pln": 12000,
+   "mileage_km": 281000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ij8sL.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148336687",
+   "year": 2007,
+   "asking_price_pln": 15900,
+   "mileage_km": 227303,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I5NeL.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150954806",
+   "year": 2010,
+   "asking_price_pln": 19999,
+   "mileage_km": 190000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgMku.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151398800",
+   "year": 2011,
+   "asking_price_pln": 17950,
+   "mileage_km": 259200,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiDPG.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149901424",
+   "year": 2010,
+   "asking_price_pln": 17999,
+   "mileage_km": 265242,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Icmis.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151232989",
+   "year": 2008,
+   "asking_price_pln": 16900,
+   "mileage_km": 264000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhVHj.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151336409",
+   "year": 2006,
+   "asking_price_pln": 13400,
+   "mileage_km": 349330,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IinBn.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151511026",
+   "year": 2010,
+   "asking_price_pln": 19200,
+   "mileage_km": 296666,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ij71M.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149523110",
+   "year": 2009,
+   "asking_price_pln": 17600,
+   "mileage_km": 280300,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IaLSC.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149864806",
+   "year": 2008,
+   "asking_price_pln": 12500,
+   "mileage_km": 435000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IccLQ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150406713",
+   "year": 2006,
+   "asking_price_pln": 10500,
+   "mileage_km": 454354,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IetKh.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150382245",
+   "year": 2011,
+   "asking_price_pln": 19500,
+   "mileage_km": 180000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IennD.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148434103",
+   "year": 2006,
+   "asking_price_pln": 16500,
+   "mileage_km": 445000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I6czZ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150560097",
+   "year": 2006,
+   "asking_price_pln": 14000,
+   "mileage_km": 322000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6If7Ed.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151504918",
+   "year": 2010,
+   "asking_price_pln": 17900,
+   "mileage_km": 208000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ij5rg.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148614255",
+   "year": 2010,
+   "asking_price_pln": 15900,
+   "mileage_km": 197300,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I6XrF.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150612587",
+   "year": 2006,
+   "asking_price_pln": 18900,
+   "mileage_km": 190800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfliP.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150948687",
+   "year": 2009,
+   "asking_price_pln": 12000,
+   "mileage_km": 360000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgKJN.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150363708",
+   "year": 2009,
+   "asking_price_pln": 18000,
+   "mileage_km": 280706,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IeiyE.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149981591",
+   "year": 2011,
+   "asking_price_pln": 18600,
+   "mileage_km": 345000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IcH9t.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151213602",
+   "year": 2009,
+   "asking_price_pln": 16900,
+   "mileage_km": 184416,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhREC.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151141149",
+   "year": 2008,
+   "asking_price_pln": 12900,
+   "mileage_km": 292000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhyO1.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151331136",
+   "year": 2009,
+   "asking_price_pln": 14900,
+   "mileage_km": 265000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iimek.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151330862",
+   "year": 2007,
+   "asking_price_pln": 14750,
+   "mileage_km": 221500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iim9U.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151502931",
+   "year": 2007,
+   "asking_price_pln": 11200,
+   "mileage_km": 185000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ij4Wd.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148428753",
+   "year": 2010,
+   "asking_price_pln": 13100,
+   "mileage_km": 259400,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I6bbH.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151066330",
+   "year": 2011,
+   "asking_price_pln": 14000,
+   "mileage_km": 271171,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ihflg.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151472168",
+   "year": 2009,
+   "asking_price_pln": 14900,
+   "mileage_km": 287000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiVW2.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150594231",
+   "year": 2009,
+   "asking_price_pln": 13500,
+   "mileage_km": 291931,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfgvL.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151495619",
+   "year": 2009,
+   "asking_price_pln": 17500,
+   "mileage_km": 218000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ij31h.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6138135882",
+   "year": 2010,
+   "asking_price_pln": 14900,
+   "mileage_km": 339514,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HoZxE.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151476986",
+   "year": 2010,
+   "asking_price_pln": 19900,
+   "mileage_km": 319185,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiYaK.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151088412",
+   "year": 2007,
+   "asking_price_pln": 16500,
+   "mileage_km": 257800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ihl5q.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151062585",
+   "year": 2010,
+   "asking_price_pln": 17900,
+   "mileage_km": 331542,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhemR.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151085364",
+   "year": 2006,
+   "asking_price_pln": 18800,
+   "mileage_km": 234000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ihkig.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150107061",
+   "year": 2007,
+   "asking_price_pln": 13900,
+   "mileage_km": 283200,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IddNb.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151054652",
+   "year": 2009,
+   "asking_price_pln": 16900,
+   "mileage_km": 212000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhciU.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151206144",
+   "year": 2007,
+   "asking_price_pln": 16900,
+   "mileage_km": 229639,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhPIk.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6147378908",
+   "year": 2006,
+   "asking_price_pln": 15500,
+   "mileage_km": 320000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I1M4I.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150937012",
+   "year": 2007,
+   "asking_price_pln": 14000,
+   "mileage_km": 381000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgHHu.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151482509",
+   "year": 2009,
+   "asking_price_pln": 14600,
+   "mileage_km": 217839,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiZBP.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150358258",
+   "year": 2008,
+   "asking_price_pln": 13900,
+   "mileage_km": 360000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ieh8K.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150253523",
+   "year": 2008,
+   "asking_price_pln": 12700,
+   "mileage_km": 269090,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IdPTt.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150537376",
+   "year": 2007,
+   "asking_price_pln": 12500,
+   "mileage_km": 341000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6If1JK.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151481913",
+   "year": 2011,
+   "asking_price_pln": 17999,
+   "mileage_km": 288000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiZsd.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151203120",
+   "year": 2006,
+   "asking_price_pln": 19900,
+   "mileage_km": 262000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhOWy.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150760748",
+   "year": 2006,
+   "asking_price_pln": 12900,
+   "mileage_km": 292149,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfXQv.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149064883",
+   "year": 2009,
+   "asking_price_pln": 16899,
+   "mileage_km": 274000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I8QFR.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151316751",
+   "year": 2006,
+   "asking_price_pln": 17500,
+   "mileage_km": 214000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iiiuj.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151478769",
+   "year": 2008,
+   "asking_price_pln": 10200,
+   "mileage_km": 257399,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiYDw.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151478353",
+   "year": 2008,
+   "asking_price_pln": 16900,
+   "mileage_km": 256466,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiYvN.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150845148",
+   "year": 2010,
+   "asking_price_pln": 19000,
+   "mileage_km": 262030,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgjNO.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151310184",
+   "year": 2007,
+   "asking_price_pln": 13500,
+   "mileage_km": 396400,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IigMo.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6142778633",
+   "year": 2008,
+   "asking_price_pln": 13499,
+   "mileage_km": 247568,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HItkJ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151473894",
+   "year": 2011,
+   "asking_price_pln": 16999,
+   "mileage_km": 220000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiXmS.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151200679",
+   "year": 2006,
+   "asking_price_pln": 19900,
+   "mileage_km": 242000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhOib.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150937519",
+   "year": 2010,
+   "asking_price_pln": 15000,
+   "mileage_km": 323407,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgHPF.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151282558",
+   "year": 2008,
+   "asking_price_pln": 13900,
+   "mileage_km": 361000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ii9AO.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151119012",
+   "year": 2006,
+   "asking_price_pln": 10000,
+   "mileage_km": 210000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iht2Y.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6146986197",
+   "year": 2008,
+   "asking_price_pln": 19500,
+   "mileage_km": 230000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I07UF.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150627905",
+   "year": 2008,
+   "asking_price_pln": 12400,
+   "mileage_km": 241000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfphT.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150455745",
+   "year": 2008,
+   "asking_price_pln": 12000,
+   "mileage_km": 216000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IeGw7.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148731433",
+   "year": 2007,
+   "asking_price_pln": 12500,
+   "mileage_km": 223000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I7rWD.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151198600",
+   "year": 2009,
+   "asking_price_pln": 17900,
+   "mileage_km": 235000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhNKE.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151465692",
+   "year": 2009,
+   "asking_price_pln": 20000,
+   "mileage_km": 202270,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiWeA.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149902607",
+   "year": 2009,
+   "asking_price_pln": 17900,
+   "mileage_km": 232000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IcmBx.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149115698",
+   "year": 2010,
+   "asking_price_pln": 15500,
+   "mileage_km": 244500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I93Ts.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150631615",
+   "year": 2009,
+   "asking_price_pln": 17500,
+   "mileage_km": 220200,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfqfJ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151107051",
+   "year": 2011,
+   "asking_price_pln": 19999,
+   "mileage_km": 248000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhpV3.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149105666",
+   "year": 2010,
+   "asking_price_pln": 17500,
+   "mileage_km": 267380,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I91hE.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151013951",
+   "year": 2006,
+   "asking_price_pln": 12500,
+   "mileage_km": 330677,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ih1Ir.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150725833",
+   "year": 2006,
+   "asking_price_pln": 14500,
+   "mileage_km": 188080,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfOLn.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151466125",
+   "year": 2008,
+   "asking_price_pln": 12000,
+   "mileage_km": 357672,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiWlz.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151283916",
+   "year": 2008,
+   "asking_price_pln": 19800,
+   "mileage_km": 158000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ii9VI.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6144590907",
+   "year": 2009,
+   "asking_price_pln": 19900,
+   "mileage_km": 198000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HQ4MX.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151465468",
+   "year": 2011,
+   "asking_price_pln": 16999,
+   "mileage_km": 375000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiWaY.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151287589",
+   "year": 2010,
+   "asking_price_pln": 12999,
+   "mileage_km": 165000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiaTX.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151194154",
+   "year": 2007,
+   "asking_price_pln": 12900,
+   "mileage_km": 278663,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhMAV.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150272851",
+   "year": 2007,
+   "asking_price_pln": 16000,
+   "mileage_km": 338000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IdUWd.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150133507",
+   "year": 2010,
+   "asking_price_pln": 11600,
+   "mileage_km": 280000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IdkFJ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151193622",
+   "year": 2011,
+   "asking_price_pln": 14999,
+   "mileage_km": 266000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhMsm.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150526338",
+   "year": 2010,
+   "asking_price_pln": 20000,
+   "mileage_km": 333500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IeYRI.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151099821",
+   "year": 2007,
+   "asking_price_pln": 16000,
+   "mileage_km": 291200,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iho3r.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150746181",
+   "year": 2008,
+   "asking_price_pln": 19900,
+   "mileage_km": 250000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfU3z.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6146992889",
+   "year": 2006,
+   "asking_price_pln": 15555,
+   "mileage_km": 261000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I09EB.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149376655",
+   "year": 2011,
+   "asking_price_pln": 14900,
+   "mileage_km": 417340,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ia9Mr.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148965243",
+   "year": 2008,
+   "asking_price_pln": 12900,
+   "mileage_km": 221000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I8qKL.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149350639",
+   "year": 2009,
+   "asking_price_pln": 14700,
+   "mileage_km": 295000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ia30P.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149515833",
+   "year": 2010,
+   "asking_price_pln": 16900,
+   "mileage_km": 170551,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IaJZf.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151462909",
+   "year": 2009,
+   "asking_price_pln": 18900,
+   "mileage_km": 162000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiUwH.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151190131",
+   "year": 2006,
+   "asking_price_pln": 11000,
+   "mileage_km": 375383,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhLy3.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150660017",
+   "year": 2009,
+   "asking_price_pln": 16500,
+   "mileage_km": 278176,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfxDP.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149633184",
+   "year": 2011,
+   "asking_price_pln": 19000,
+   "mileage_km": 316000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ibev0.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149909831",
+   "year": 2006,
+   "asking_price_pln": 15000,
+   "mileage_km": 304800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Icou3.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149342363",
+   "year": 2008,
+   "asking_price_pln": 12900,
+   "mileage_km": 265400,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ia0Rl.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151083514",
+   "year": 2009,
+   "asking_price_pln": 19900,
+   "mileage_km": 227000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhjOq.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148449484",
+   "year": 2011,
+   "asking_price_pln": 15900,
+   "mileage_km": 152600,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I6gA4.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6147649821",
+   "year": 2008,
+   "asking_price_pln": 14900,
+   "mileage_km": 228000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I2Uyh.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149852947",
+   "year": 2011,
+   "asking_price_pln": 19800,
+   "mileage_km": 238609,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ic9Gz.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148497445",
+   "year": 2011,
+   "asking_price_pln": 12800,
+   "mileage_km": 250000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I6t3D.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6145652993",
+   "year": 2008,
+   "asking_price_pln": 14900,
+   "mileage_km": 202000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HUx5n.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151457940",
+   "year": 2007,
+   "asking_price_pln": 12500,
+   "mileage_km": 360000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiTdy.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151019984",
+   "year": 2007,
+   "asking_price_pln": 14900,
+   "mileage_km": 160000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ih3hK.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150730817",
+   "year": 2006,
+   "asking_price_pln": 16900,
+   "mileage_km": 360000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfQ3L.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151456527",
+   "year": 2006,
+   "asking_price_pln": 14700,
+   "mileage_km": 296000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiSQL.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151173508",
+   "year": 2006,
+   "asking_price_pln": 11999,
+   "mileage_km": 211132,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhHdV.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151173273",
+   "year": 2006,
+   "asking_price_pln": 15000,
+   "mileage_km": 272970,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhHa9.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151068434",
+   "year": 2008,
+   "asking_price_pln": 17800,
+   "mileage_km": 209000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhfTc.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148020630",
+   "year": 2008,
+   "asking_price_pln": 14500,
+   "mileage_km": 291000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I4t14.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151135240",
+   "year": 2009,
+   "asking_price_pln": 16900,
+   "mileage_km": 326000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhxgI.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151451683",
+   "year": 2007,
+   "asking_price_pln": 11900,
+   "mileage_km": 267279,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiRAD.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151168078",
+   "year": 2006,
+   "asking_price_pln": 18000,
+   "mileage_km": 199000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhFOm.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151451068",
+   "year": 2006,
+   "asking_price_pln": 10900,
+   "mileage_km": 314942,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiRqI.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150680537",
+   "year": 2011,
+   "asking_price_pln": 20000,
+   "mileage_km": 221200,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfCYN.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151450151",
+   "year": 2008,
+   "asking_price_pln": 15900,
+   "mileage_km": 212000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiRbW.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149023915",
+   "year": 2011,
+   "asking_price_pln": 18900,
+   "mileage_km": 327196,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I8G15.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151448485",
+   "year": 2006,
+   "asking_price_pln": 17900,
+   "mileage_km": 258650,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiQL3.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149962157",
+   "year": 2008,
+   "asking_price_pln": 15999,
+   "mileage_km": 226000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IcC61.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149443779",
+   "year": 2009,
+   "asking_price_pln": 20000,
+   "mileage_km": 255000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iarf5.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151054561",
+   "year": 2008,
+   "asking_price_pln": 15900,
+   "mileage_km": 282191,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ihchr.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151447974",
+   "year": 2009,
+   "asking_price_pln": 17900,
+   "mileage_km": 255000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiQCO.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151164536",
+   "year": 2009,
+   "asking_price_pln": 12900,
+   "mileage_km": 195222,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhETe.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151246607",
+   "year": 2007,
+   "asking_price_pln": 14900,
+   "mileage_km": 283000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ii0eX.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149788034",
+   "year": 2010,
+   "asking_price_pln": 14870,
+   "mileage_km": 169000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IbSNA.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150927332",
+   "year": 2011,
+   "asking_price_pln": 19300,
+   "mileage_km": 299000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgFbm.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6147067567",
+   "year": 2007,
+   "asking_price_pln": 16500,
+   "mileage_km": 212000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I0t55.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6144134721",
+   "year": 2011,
+   "asking_price_pln": 12500,
+   "mileage_km": 160000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HOa77.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151242449",
+   "year": 2007,
+   "asking_price_pln": 11500,
+   "mileage_km": 370000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhZ9T.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151066900",
+   "year": 2008,
+   "asking_price_pln": 15900,
+   "mileage_km": 210000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ihfus.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151302822",
+   "year": 2007,
+   "asking_price_pln": 15600,
+   "mileage_km": 239000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IieRE.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151236699",
+   "year": 2007,
+   "asking_price_pln": 10000,
+   "mileage_km": 274000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhXF9.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151439616",
+   "year": 2011,
+   "asking_price_pln": 18800,
+   "mileage_km": 249000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiOs0.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151063318",
+   "year": 2009,
+   "asking_price_pln": 15900,
+   "mileage_km": 272920,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IheyG.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151155484",
+   "year": 2007,
+   "asking_price_pln": 10000,
+   "mileage_km": 158277,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhCxe.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151437331",
+   "year": 2009,
+   "asking_price_pln": 16500,
+   "mileage_km": 234000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiNR9.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151061584",
+   "year": 2008,
+   "asking_price_pln": 11500,
+   "mileage_km": 222000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ihe6I.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151060791",
+   "year": 2006,
+   "asking_price_pln": 17200,
+   "mileage_km": 308000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhdTW.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151152224",
+   "year": 2009,
+   "asking_price_pln": 15900,
+   "mileage_km": 335000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhBGE.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151039262",
+   "year": 2007,
+   "asking_price_pln": 17000,
+   "mileage_km": 217000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ih8iG.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149270032",
+   "year": 2010,
+   "asking_price_pln": 17900,
+   "mileage_km": 257585,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I9I2I.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150887491",
+   "year": 2008,
+   "asking_price_pln": 11000,
+   "mileage_km": 243000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IguOL.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151146822",
+   "year": 2006,
+   "asking_price_pln": 17900,
+   "mileage_km": 271500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhAhv.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151428913",
+   "year": 2010,
+   "asking_price_pln": 13900,
+   "mileage_km": 228000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiLFn.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151145127",
+   "year": 2006,
+   "asking_price_pln": 14500,
+   "mileage_km": 243737,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhzQb.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6146492930",
+   "year": 2007,
+   "asking_price_pln": 16999,
+   "mileage_km": 223000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HY3AK.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151427686",
+   "year": 2010,
+   "asking_price_pln": 15900,
+   "mileage_km": 325500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiLlA.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6131420509",
+   "year": 2010,
+   "asking_price_pln": 19999,
+   "mileage_km": 275000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6GVOzb.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151407906",
+   "year": 2010,
+   "asking_price_pln": 19900,
+   "mileage_km": 211000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiGcy.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151352222",
+   "year": 2006,
+   "asking_price_pln": 14500,
+   "mileage_km": 240000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IirIq.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149971342",
+   "year": 2009,
+   "asking_price_pln": 19500,
+   "mileage_km": 227150,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IcEua.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150836937",
+   "year": 2006,
+   "asking_price_pln": 18900,
+   "mileage_km": 129099,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IghFn.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149261252",
+   "year": 2010,
+   "asking_price_pln": 18200,
+   "mileage_km": 243000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I9FL6.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149750350",
+   "year": 2008,
+   "asking_price_pln": 13500,
+   "mileage_km": 265000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IbIZM.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151421192",
+   "year": 2010,
+   "asking_price_pln": 15000,
+   "mileage_km": 354038,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiJEQ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151135966",
+   "year": 2008,
+   "asking_price_pln": 18500,
+   "mileage_km": 215000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ihxsq.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150848922",
+   "year": 2010,
+   "asking_price_pln": 19500,
+   "mileage_km": 167000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgkMG.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6144142080",
+   "year": 2009,
+   "asking_price_pln": 14500,
+   "mileage_km": 291699,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HOc1O.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151134607",
+   "year": 2006,
+   "asking_price_pln": 14900,
+   "mileage_km": 191185,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ihx6w.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150847438",
+   "year": 2007,
+   "asking_price_pln": 19900,
+   "mileage_km": 250000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgkoK.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149868560",
+   "year": 2008,
+   "asking_price_pln": 17900,
+   "mileage_km": 201011,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IcdKo.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150030520",
+   "year": 2008,
+   "asking_price_pln": 12500,
+   "mileage_km": 300000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IcTSE.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151419901",
+   "year": 2006,
+   "asking_price_pln": 16000,
+   "mileage_km": 421466,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiJk1.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151417958",
+   "year": 2006,
+   "asking_price_pln": 19700,
+   "mileage_km": 130000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiIOG.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151129004",
+   "year": 2008,
+   "asking_price_pln": 20000,
+   "mileage_km": 240000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhwE8.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149576178",
+   "year": 2008,
+   "asking_price_pln": 19999,
+   "mileage_km": 351460,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IaZGy.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151414060",
+   "year": 2007,
+   "asking_price_pln": 12800,
+   "mileage_km": 315000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiHNO.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150403008",
+   "year": 2007,
+   "asking_price_pln": 19900,
+   "mileage_km": 298000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IesMv.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6147997386",
+   "year": 2009,
+   "asking_price_pln": 16500,
+   "mileage_km": 253217,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I4mYa.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6148013403",
+   "year": 2008,
+   "asking_price_pln": 14900,
+   "mileage_km": 265000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I4r8w.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149601991",
+   "year": 2009,
+   "asking_price_pln": 13400,
+   "mileage_km": 278000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ib6oT.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150243254",
+   "year": 2006,
+   "asking_price_pln": 12500,
+   "mileage_km": 200000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IdNdQ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150836327",
+   "year": 2007,
+   "asking_price_pln": 13900,
+   "mileage_km": 322000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ighwx.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151404058",
+   "year": 2008,
+   "asking_price_pln": 12900,
+   "mileage_km": 370000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiFcu.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151404132",
+   "year": 2010,
+   "asking_price_pln": 11900,
+   "mileage_km": 237000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiFdG.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151117649",
+   "year": 2009,
+   "asking_price_pln": 16999,
+   "mileage_km": 287000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhsGZ.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149120760",
+   "year": 2010,
+   "asking_price_pln": 17900,
+   "mileage_km": 307000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I95d6.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151400762",
+   "year": 2007,
+   "asking_price_pln": 15900,
+   "mileage_km": 187000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiElk.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149015528",
+   "year": 2006,
+   "asking_price_pln": 12500,
+   "mileage_km": 190000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I8DPO.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150552674",
+   "year": 2009,
+   "asking_price_pln": 15900,
+   "mileage_km": 210000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6If5Iu.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151392100",
+   "year": 2006,
+   "asking_price_pln": 15900,
+   "mileage_km": 247000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiC5C.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151110319",
+   "year": 2008,
+   "asking_price_pln": 16900,
+   "mileage_km": 203458,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhqML.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150875322",
+   "year": 2011,
+   "asking_price_pln": 19999,
+   "mileage_km": 199145,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgrEu.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150518852",
+   "year": 2007,
+   "asking_price_pln": 12500,
+   "mileage_km": 172000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IeVUY.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150457777",
+   "year": 2007,
+   "asking_price_pln": 18000,
+   "mileage_km": 311900,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IeH1T.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149852327",
+   "year": 2009,
+   "asking_price_pln": 14900,
+   "mileage_km": 219566,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ic9vz.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150529029",
+   "year": 2009,
+   "asking_price_pln": 17000,
+   "mileage_km": 357000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IeZz7.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150412914",
+   "year": 2008,
+   "asking_price_pln": 17990,
+   "mileage_km": 187200,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iewmi.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150787008",
+   "year": 2010,
+   "asking_price_pln": 20000,
+   "mileage_km": 237000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ig4G4.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150242700",
+   "year": 2006,
+   "asking_price_pln": 17000,
+   "mileage_km": 356000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IdN4U.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151090458",
+   "year": 2011,
+   "asking_price_pln": 18999,
+   "mileage_km": 240000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhlCq.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6146155687",
+   "year": 2007,
+   "asking_price_pln": 14900,
+   "mileage_km": 179800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HVDRl.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151369404",
+   "year": 2008,
+   "asking_price_pln": 12900,
+   "mileage_km": 356700,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iivby.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151082320",
+   "year": 2006,
+   "asking_price_pln": 11000,
+   "mileage_km": 354281,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ihjwa.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150524574",
+   "year": 2006,
+   "asking_price_pln": 11900,
+   "mileage_km": 220000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IeYpg.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151366046",
+   "year": 2009,
+   "asking_price_pln": 13900,
+   "mileage_km": 275000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iiwjo.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151079252",
+   "year": 2009,
+   "asking_price_pln": 19999,
+   "mileage_km": 149078,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IhiHG.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149701637",
+   "year": 2010,
+   "asking_price_pln": 17900,
+   "mileage_km": 220000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ibvk5.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151076953",
+   "year": 2008,
+   "asking_price_pln": 18000,
+   "mileage_km": 266666,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ihi6B.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150467801",
+   "year": 2007,
+   "asking_price_pln": 11999,
+   "mileage_km": 226000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IeJDz.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150823639",
+   "year": 2009,
+   "asking_price_pln": 19200,
+   "mileage_km": 212510,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgecT.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151040132",
+   "year": 2007,
+   "asking_price_pln": 18900,
+   "mileage_km": 320000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ih8vI.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149631716",
+   "year": 2011,
+   "asking_price_pln": 17300,
+   "mileage_km": 293000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ibe8k.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151346468",
+   "year": 2008,
+   "asking_price_pln": 18900,
+   "mileage_km": 114000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiqdC.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149216896",
+   "year": 2006,
+   "asking_price_pln": 11700,
+   "mileage_km": 271000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I9udG.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151347652",
+   "year": 2007,
+   "asking_price_pln": 15900,
+   "mileage_km": 279000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiqvI.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151347910",
+   "year": 2007,
+   "asking_price_pln": 15000,
+   "mileage_km": 264690,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IiqAS.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6146111897",
+   "year": 2009,
+   "asking_price_pln": 15500,
+   "mileage_km": 278000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HVst3.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6149261885",
+   "year": 2006,
+   "asking_price_pln": 11200,
+   "mileage_km": 221749,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I9FWj.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151063361",
+   "year": 2011,
+   "asking_price_pln": 20000,
+   "mileage_km": 220000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ihezn.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6144087182",
+   "year": 2008,
+   "asking_price_pln": 18900,
+   "mileage_km": 391000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6HNXKm.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151055166",
+   "year": 2007,
+   "asking_price_pln": 15252,
+   "mileage_km": 334002,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ihcrc.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150603346",
+   "year": 2007,
+   "asking_price_pln": 12900,
+   "mileage_km": 362000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IfiTM.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151329991",
+   "year": 2010,
+   "asking_price_pln": 17900,
+   "mileage_km": 212643,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IilWR.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150769948",
+   "year": 2007,
+   "asking_price_pln": 12900,
+   "mileage_km": 321333,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ig0eU.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151323600",
+   "year": 2008,
+   "asking_price_pln": 18999,
+   "mileage_km": 215000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IikgM.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151327113",
+   "year": 2008,
+   "asking_price_pln": 19999,
+   "mileage_km": 286066,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Iilbr.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6151043098",
+   "year": 2007,
+   "asking_price_pln": 10500,
+   "mileage_km": 358460,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ih9iy.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150847495",
+   "year": 2007,
+   "asking_price_pln": 14000,
+   "mileage_km": 421661,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IgkpF.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150803707",
+   "year": 2006,
+   "asking_price_pln": 10900,
+   "mileage_km": 323000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6Ig91p.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6150226231",
+   "year": 2011,
+   "asking_price_pln": 16900,
+   "mileage_km": 264000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6IdINh.html"
+  },
+  {
+   "model_id": "seria-3",
+   "id": "6147431602",
+   "year": 2010,
+   "asking_price_pln": 12900,
+   "mileage_km": 314000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-3-ID6I1ZMC.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150814299",
+   "year": 2004,
+   "asking_price_pln": 19999,
+   "mileage_km": 273000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IgbMf.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150906074",
+   "year": 2009,
+   "asking_price_pln": 16600,
+   "mileage_km": 321511,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IgzEu.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151541752",
+   "year": 2006,
+   "asking_price_pln": 19900,
+   "mileage_km": 349877,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ijf1m.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151360778",
+   "year": 2004,
+   "asking_price_pln": 15900,
+   "mileage_km": 361457,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IitVq.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6148359530",
+   "year": 2006,
+   "asking_price_pln": 16900,
+   "mileage_km": 283223,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I5Tbc.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151530891",
+   "year": 2009,
+   "asking_price_pln": 10300,
+   "mileage_km": 243000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ijccb.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6138771019",
+   "year": 2009,
+   "asking_price_pln": 15000,
+   "mileage_km": 394000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6HrELN.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151206274",
+   "year": 2007,
+   "asking_price_pln": 13500,
+   "mileage_km": 302000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhPKq.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150294248",
+   "year": 2004,
+   "asking_price_pln": 10500,
+   "mileage_km": 394810,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ie0uk.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151319935",
+   "year": 2007,
+   "asking_price_pln": 15500,
+   "mileage_km": 435500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IijjF.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149438573",
+   "year": 2009,
+   "asking_price_pln": 19900,
+   "mileage_km": 283000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IapT7.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151577249",
+   "year": 2005,
+   "asking_price_pln": 19300,
+   "mileage_km": 408750,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IjofT.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151577876",
+   "year": 2006,
+   "asking_price_pln": 12500,
+   "mileage_km": 355000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ijoq0.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149478086",
+   "year": 2009,
+   "asking_price_pln": 19900,
+   "mileage_km": 245000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IaAaq.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151575168",
+   "year": 2006,
+   "asking_price_pln": 17500,
+   "mileage_km": 280000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IjnIk.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151567888",
+   "year": 2006,
+   "asking_price_pln": 13800,
+   "mileage_km": 264000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IjlOU.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151401573",
+   "year": 2005,
+   "asking_price_pln": 13800,
+   "mileage_km": 260000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiEyp.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151299506",
+   "year": 2004,
+   "asking_price_pln": 17000,
+   "mileage_km": 278000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Iie0a.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6148018910",
+   "year": 2006,
+   "asking_price_pln": 16900,
+   "mileage_km": 355000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I4szk.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150536255",
+   "year": 2004,
+   "asking_price_pln": 17500,
+   "mileage_km": 354000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6If1rF.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150941947",
+   "year": 2008,
+   "asking_price_pln": 17900,
+   "mileage_km": 334000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IgIZ5.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6148510208",
+   "year": 2005,
+   "asking_price_pln": 18900,
+   "mileage_km": 402215,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I6vnu.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151563598",
+   "year": 2008,
+   "asking_price_pln": 19900,
+   "mileage_km": 299000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IjkHI.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151563421",
+   "year": 2005,
+   "asking_price_pln": 18900,
+   "mileage_km": 226925,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IjkER.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151146672",
+   "year": 2005,
+   "asking_price_pln": 11900,
+   "mileage_km": 455000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhAf6.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6121783432",
+   "year": 2005,
+   "asking_price_pln": 14900,
+   "mileage_km": 330000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ginvs.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151559799",
+   "year": 2008,
+   "asking_price_pln": 19900,
+   "mileage_km": 292675,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IjjIr.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149518958",
+   "year": 2006,
+   "asking_price_pln": 17500,
+   "mileage_km": 290000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IaKNE.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149502051",
+   "year": 2009,
+   "asking_price_pln": 19000,
+   "mileage_km": 42700,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IaGoX.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151375444",
+   "year": 2004,
+   "asking_price_pln": 13000,
+   "mileage_km": 355508,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IixKY.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149915773",
+   "year": 2005,
+   "asking_price_pln": 17290,
+   "mileage_km": 292462,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Icq1T.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151190204",
+   "year": 2005,
+   "asking_price_pln": 11900,
+   "mileage_km": 240000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhLze.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150820531",
+   "year": 2006,
+   "asking_price_pln": 17900,
+   "mileage_km": 320000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IgdoL.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6147091059",
+   "year": 2004,
+   "asking_price_pln": 19900,
+   "mileage_km": 482000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I0zbZ.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151552376",
+   "year": 2009,
+   "asking_price_pln": 19800,
+   "mileage_km": 310000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IjhMI.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151188102",
+   "year": 2008,
+   "asking_price_pln": 19000,
+   "mileage_km": 266200,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhL1k.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151547176",
+   "year": 2006,
+   "asking_price_pln": 15900,
+   "mileage_km": 246271,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IjgqQ.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151543136",
+   "year": 2008,
+   "asking_price_pln": 18999,
+   "mileage_km": 243000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IjfnG.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151543841",
+   "year": 2008,
+   "asking_price_pln": 13999,
+   "mileage_km": 370000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ijfz3.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6146170499",
+   "year": 2007,
+   "asking_price_pln": 16000,
+   "mileage_km": 313000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6HVHIf.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151121857",
+   "year": 2005,
+   "asking_price_pln": 19900,
+   "mileage_km": 259100,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhtMR.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151361146",
+   "year": 2005,
+   "asking_price_pln": 19900,
+   "mileage_km": 289125,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Iiu2m.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6148806289",
+   "year": 2006,
+   "asking_price_pln": 18500,
+   "mileage_km": 351860,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I7LoZ.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151536450",
+   "year": 2009,
+   "asking_price_pln": 14300,
+   "mileage_km": 380000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IjdDQ.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149817184",
+   "year": 2009,
+   "asking_price_pln": 16900,
+   "mileage_km": 325480,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ic0nK.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150594221",
+   "year": 2006,
+   "asking_price_pln": 17900,
+   "mileage_km": 362000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IfgvB.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149172551",
+   "year": 2005,
+   "asking_price_pln": 13000,
+   "mileage_km": 283922,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I9iGr.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151535136",
+   "year": 2005,
+   "asking_price_pln": 10000,
+   "mileage_km": 283863,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IjdiE.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6146873179",
+   "year": 2004,
+   "asking_price_pln": 14999,
+   "mileage_km": 237000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6HZEwN.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149262570",
+   "year": 2005,
+   "asking_price_pln": 18999,
+   "mileage_km": 327491,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I9G6m.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151532348",
+   "year": 2008,
+   "asking_price_pln": 19300,
+   "mileage_km": 359000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IjczG.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150136815",
+   "year": 2007,
+   "asking_price_pln": 16000,
+   "mileage_km": 259839,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Idlx5.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151530138",
+   "year": 2006,
+   "asking_price_pln": 19900,
+   "mileage_km": 323000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ijc02.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151384799",
+   "year": 2009,
+   "asking_price_pln": 12950,
+   "mileage_km": 308015,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiAbR.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151528160",
+   "year": 2005,
+   "asking_price_pln": 11500,
+   "mileage_km": 312000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ijbu8.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150030825",
+   "year": 2007,
+   "asking_price_pln": 16900,
+   "mileage_km": 388000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IcTXz.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6144806404",
+   "year": 2005,
+   "asking_price_pln": 19900,
+   "mileage_km": 375000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6HQYQI.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149373244",
+   "year": 2008,
+   "asking_price_pln": 15000,
+   "mileage_km": 271000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ia8Tq.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150541222",
+   "year": 2008,
+   "asking_price_pln": 16500,
+   "mileage_km": 390000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6If2JM.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150401410",
+   "year": 2004,
+   "asking_price_pln": 16250,
+   "mileage_km": 259692,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IesmK.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151236274",
+   "year": 2006,
+   "asking_price_pln": 13500,
+   "mileage_km": 391738,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhXyi.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150932685",
+   "year": 2006,
+   "asking_price_pln": 16900,
+   "mileage_km": 390000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IgGzH.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151333274",
+   "year": 2008,
+   "asking_price_pln": 15900,
+   "mileage_km": 246000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IimMO.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151507474",
+   "year": 2008,
+   "asking_price_pln": 19900,
+   "mileage_km": 257000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ij66u.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151506725",
+   "year": 2008,
+   "asking_price_pln": 11999,
+   "mileage_km": 390000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ij5Up.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151332074",
+   "year": 2004,
+   "asking_price_pln": 17900,
+   "mileage_km": 290000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Iimts.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151506500",
+   "year": 2007,
+   "asking_price_pln": 17900,
+   "mileage_km": 308000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ij5QM.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149795159",
+   "year": 2004,
+   "asking_price_pln": 19999,
+   "mileage_km": 276821,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IbUEw.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149899704",
+   "year": 2004,
+   "asking_price_pln": 12900,
+   "mileage_km": 264978,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IclQI.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151139646",
+   "year": 2009,
+   "asking_price_pln": 13400,
+   "mileage_km": 291000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhypM.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150786862",
+   "year": 2007,
+   "asking_price_pln": 12900,
+   "mileage_km": 360000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ig4DI.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150750587",
+   "year": 2004,
+   "asking_price_pln": 20000,
+   "mileage_km": 205522,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IfWcD.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149292227",
+   "year": 2008,
+   "asking_price_pln": 14400,
+   "mileage_km": 245000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I9NOH.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151494445",
+   "year": 2009,
+   "asking_price_pln": 19000,
+   "mileage_km": 284004,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ij2Il.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151494041",
+   "year": 2006,
+   "asking_price_pln": 15000,
+   "mileage_km": 362700,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ij2BP.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151127559",
+   "year": 2008,
+   "asking_price_pln": 16400,
+   "mileage_km": 298900,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhwgP.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6148765175",
+   "year": 2004,
+   "asking_price_pln": 13000,
+   "mileage_km": 308000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I7AHR.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151482515",
+   "year": 2005,
+   "asking_price_pln": 11800,
+   "mileage_km": 241245,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiZBW.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151319585",
+   "year": 2008,
+   "asking_price_pln": 12800,
+   "mileage_km": 304000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Iije1.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151481856",
+   "year": 2008,
+   "asking_price_pln": 15300,
+   "mileage_km": 389327,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiZri.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151352328",
+   "year": 2007,
+   "asking_price_pln": 16500,
+   "mileage_km": 366000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IirK8.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150048326",
+   "year": 2006,
+   "asking_price_pln": 12300,
+   "mileage_km": 380000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IcYwQ.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151475678",
+   "year": 2007,
+   "asking_price_pln": 14250,
+   "mileage_km": 292000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiXPE.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150833776",
+   "year": 2007,
+   "asking_price_pln": 17900,
+   "mileage_km": 263036,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IggQo.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150566147",
+   "year": 2006,
+   "asking_price_pln": 16500,
+   "mileage_km": 390000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6If9dN.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151472546",
+   "year": 2004,
+   "asking_price_pln": 18900,
+   "mileage_km": 413000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiX18.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151113031",
+   "year": 2007,
+   "asking_price_pln": 19900,
+   "mileage_km": 293890,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ihruw.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151197571",
+   "year": 2007,
+   "asking_price_pln": 19500,
+   "mileage_km": 295272,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhNu3.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151466928",
+   "year": 2004,
+   "asking_price_pln": 15900,
+   "mileage_km": 214000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiWyv.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151295355",
+   "year": 2005,
+   "asking_price_pln": 17700,
+   "mileage_km": 250819,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IicWd.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150930644",
+   "year": 2006,
+   "asking_price_pln": 11499,
+   "mileage_km": 377000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IgG2M.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6125927780",
+   "year": 2006,
+   "asking_price_pln": 17000,
+   "mileage_km": 604000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6GzLEM.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150270221",
+   "year": 2007,
+   "asking_price_pln": 15500,
+   "mileage_km": 406261,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IdUeN.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151108759",
+   "year": 2009,
+   "asking_price_pln": 14555,
+   "mileage_km": 303000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhqnB.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6132515738",
+   "year": 2006,
+   "asking_price_pln": 19990,
+   "mileage_km": 183600,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6H1pua.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6148619835",
+   "year": 2008,
+   "asking_price_pln": 16900,
+   "mileage_km": 276700,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I6YTF.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151195989",
+   "year": 2009,
+   "asking_price_pln": 18900,
+   "mileage_km": 250000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhN4x.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150890819",
+   "year": 2005,
+   "asking_price_pln": 11000,
+   "mileage_km": 280821,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IgwGr.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151290222",
+   "year": 2007,
+   "asking_price_pln": 14999,
+   "mileage_km": 275000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IibAq.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150631502",
+   "year": 2005,
+   "asking_price_pln": 15000,
+   "mileage_km": 283473,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IfqdU.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151105245",
+   "year": 2004,
+   "asking_price_pln": 13700,
+   "mileage_km": 387852,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhpsW.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151193829",
+   "year": 2005,
+   "asking_price_pln": 15900,
+   "mileage_km": 296000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhMwH.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150526138",
+   "year": 2004,
+   "asking_price_pln": 10500,
+   "mileage_km": 429000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IeYOu.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150895998",
+   "year": 2006,
+   "asking_price_pln": 19000,
+   "mileage_km": 223000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Igx1Y.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150606882",
+   "year": 2004,
+   "asking_price_pln": 17900,
+   "mileage_km": 284000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IfjOO.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149811108",
+   "year": 2005,
+   "asking_price_pln": 11800,
+   "mileage_km": 373000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IbYNK.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151083739",
+   "year": 2006,
+   "asking_price_pln": 19900,
+   "mileage_km": 266000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhjS3.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6148194182",
+   "year": 2005,
+   "asking_price_pln": 12700,
+   "mileage_km": 461000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I5cai.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150889564",
+   "year": 2005,
+   "asking_price_pln": 15900,
+   "mileage_km": 313000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Igwmc.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151270304",
+   "year": 2004,
+   "asking_price_pln": 17700,
+   "mileage_km": 342506,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ii6pa.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151459144",
+   "year": 2009,
+   "asking_price_pln": 19900,
+   "mileage_km": 299111,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiTvY.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151176640",
+   "year": 2007,
+   "asking_price_pln": 11900,
+   "mileage_km": 361800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhI2s.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149666761",
+   "year": 2005,
+   "asking_price_pln": 15555,
+   "mileage_km": 328000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ibnfz.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151174217",
+   "year": 2005,
+   "asking_price_pln": 17900,
+   "mileage_km": 383199,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhHpn.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151255030",
+   "year": 2006,
+   "asking_price_pln": 20000,
+   "mileage_km": 218000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ii2qO.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151450580",
+   "year": 2006,
+   "asking_price_pln": 18700,
+   "mileage_km": 289063,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiRiQ.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151167665",
+   "year": 2007,
+   "asking_price_pln": 11000,
+   "mileage_km": 266400,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhFHH.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6147891787",
+   "year": 2004,
+   "asking_price_pln": 14500,
+   "mileage_km": 181441,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I3WuX.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151166159",
+   "year": 2009,
+   "asking_price_pln": 14900,
+   "mileage_km": 339032,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhFjp.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151053946",
+   "year": 2009,
+   "asking_price_pln": 14900,
+   "mileage_km": 215000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ihc7v.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151244522",
+   "year": 2007,
+   "asking_price_pln": 20000,
+   "mileage_km": 277000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhZHk.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150815656",
+   "year": 2007,
+   "asking_price_pln": 12500,
+   "mileage_km": 314045,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Igc88.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6147304146",
+   "year": 2007,
+   "asking_price_pln": 19700,
+   "mileage_km": 432000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I1sCS.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151239353",
+   "year": 2007,
+   "asking_price_pln": 15300,
+   "mileage_km": 305731,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhYlX.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151427619",
+   "year": 2006,
+   "asking_price_pln": 14900,
+   "mileage_km": 336093,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiLkw.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149655861",
+   "year": 2007,
+   "asking_price_pln": 12500,
+   "mileage_km": 550000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IbkpL.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149735430",
+   "year": 2009,
+   "asking_price_pln": 14900,
+   "mileage_km": 197000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IbF78.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6147762372",
+   "year": 2009,
+   "asking_price_pln": 19999,
+   "mileage_km": 298250,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I3nPC.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6145781630",
+   "year": 2008,
+   "asking_price_pln": 14500,
+   "mileage_km": 279000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6HW4ya.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149907537",
+   "year": 2004,
+   "asking_price_pln": 14900,
+   "mileage_km": 206589,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IcnT3.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151431450",
+   "year": 2009,
+   "asking_price_pln": 14900,
+   "mileage_km": 340000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiMki.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149704286",
+   "year": 2006,
+   "asking_price_pln": 19000,
+   "mileage_km": 340000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ibx0O.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151143792",
+   "year": 2007,
+   "asking_price_pln": 13900,
+   "mileage_km": 264000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhzuE.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6148441079",
+   "year": 2004,
+   "asking_price_pln": 20000,
+   "mileage_km": 235000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I6eow.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150571676",
+   "year": 2005,
+   "asking_price_pln": 11500,
+   "mileage_km": 276070,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IfaEY.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151137822",
+   "year": 2009,
+   "asking_price_pln": 12900,
+   "mileage_km": 330928,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhxVm.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6146463329",
+   "year": 2009,
+   "asking_price_pln": 17600,
+   "mileage_km": 277000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6HXWTj.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151407523",
+   "year": 2004,
+   "asking_price_pln": 18900,
+   "mileage_km": 330000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiG6n.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151115162",
+   "year": 2008,
+   "asking_price_pln": 14999,
+   "mileage_km": 240000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ihs2S.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151112454",
+   "year": 2009,
+   "asking_price_pln": 15600,
+   "mileage_km": 407003,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ihrlc.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151390730",
+   "year": 2009,
+   "asking_price_pln": 19500,
+   "mileage_km": 418000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiBJv.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151109348",
+   "year": 2007,
+   "asking_price_pln": 15800,
+   "mileage_km": 315580,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ihqx6.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150594042",
+   "year": 2008,
+   "asking_price_pln": 16400,
+   "mileage_km": 248000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IfgtI.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149534550",
+   "year": 2008,
+   "asking_price_pln": 18500,
+   "mileage_km": 204000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IaOR8.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151378223",
+   "year": 2009,
+   "asking_price_pln": 16900,
+   "mileage_km": 330000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiytN.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151098735",
+   "year": 2009,
+   "asking_price_pln": 19999,
+   "mileage_km": 255625,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhnLW.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151094991",
+   "year": 2004,
+   "asking_price_pln": 16700,
+   "mileage_km": 373000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhmNx.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150242513",
+   "year": 2007,
+   "asking_price_pln": 11999,
+   "mileage_km": 390000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IdN1T.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150837885",
+   "year": 2008,
+   "asking_price_pln": 17000,
+   "mileage_km": 417000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IghUF.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151080224",
+   "year": 2006,
+   "asking_price_pln": 13900,
+   "mileage_km": 335000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhiXm.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151357745",
+   "year": 2008,
+   "asking_price_pln": 13000,
+   "mileage_km": 288000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Iit9w.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150547120",
+   "year": 2006,
+   "asking_price_pln": 17950,
+   "mileage_km": 298700,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6If4gU.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6146845058",
+   "year": 2007,
+   "asking_price_pln": 18000,
+   "mileage_km": 314000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6HZxce.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150478551",
+   "year": 2009,
+   "asking_price_pln": 19600,
+   "mileage_km": 366000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IeMqX.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151068876",
+   "year": 2005,
+   "asking_price_pln": 17500,
+   "mileage_km": 274611,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Ihg0k.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151347346",
+   "year": 2006,
+   "asking_price_pln": 18900,
+   "mileage_km": 336000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IiqrM.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6148252833",
+   "year": 2005,
+   "asking_price_pln": 13999,
+   "mileage_km": 386774,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I5rqh.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150389213",
+   "year": 2009,
+   "asking_price_pln": 18600,
+   "mileage_km": 317000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Iepc1.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151336160",
+   "year": 2006,
+   "asking_price_pln": 15500,
+   "mileage_km": 325000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Iinxm.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6148077988",
+   "year": 2007,
+   "asking_price_pln": 12900,
+   "mileage_km": 370000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6I4HVc.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151332832",
+   "year": 2006,
+   "asking_price_pln": 12900,
+   "mileage_km": 446173,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IimFG.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150738551",
+   "year": 2007,
+   "asking_price_pln": 14900,
+   "mileage_km": 377000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IfS4w.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151052425",
+   "year": 2008,
+   "asking_price_pln": 16000,
+   "mileage_km": 250700,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IhbIZ.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6149813784",
+   "year": 2006,
+   "asking_price_pln": 14800,
+   "mileage_km": 375971,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IbZuU.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6151329380",
+   "year": 2008,
+   "asking_price_pln": 16800,
+   "mileage_km": 249000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IilM0.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150139974",
+   "year": 2009,
+   "asking_price_pln": 16500,
+   "mileage_km": 370000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6Idmm2.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150821971",
+   "year": 2005,
+   "asking_price_pln": 17500,
+   "mileage_km": 299045,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IgdLZ.html"
+  },
+  {
+   "model_id": "seria-5",
+   "id": "6150190063",
+   "year": 2005,
+   "asking_price_pln": 16999,
+   "mileage_km": 378651,
+   "url": "https://www.otomoto.pl/osobowe/oferta/bmw-seria-5-ID6IdznW.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151567104",
+   "year": 2005,
+   "asking_price_pln": 10900,
+   "mileage_km": 278535,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IjlCg.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151536380",
+   "year": 2005,
+   "asking_price_pln": 11000,
+   "mileage_km": 210586,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IjdCI.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6148370717",
+   "year": 2005,
+   "asking_price_pln": 15200,
+   "mileage_km": 156000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6I5V5D.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6146865783",
+   "year": 2005,
+   "asking_price_pln": 19999,
+   "mileage_km": 290000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6HZCAw.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151581827",
+   "year": 2005,
+   "asking_price_pln": 13500,
+   "mileage_km": 220000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IjprJ.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151206869",
+   "year": 2005,
+   "asking_price_pln": 13000,
+   "mileage_km": 213809,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhPU1.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151530326",
+   "year": 2005,
+   "asking_price_pln": 18500,
+   "mileage_km": 341663,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6Ijc34.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151204696",
+   "year": 2004,
+   "asking_price_pln": 11900,
+   "mileage_km": 200000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhPkY.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151577532",
+   "year": 2002,
+   "asking_price_pln": 16000,
+   "mileage_km": 126189,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6Ijoks.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151407440",
+   "year": 2005,
+   "asking_price_pln": 16900,
+   "mileage_km": 146000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IiG52.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6148914611",
+   "year": 2005,
+   "asking_price_pln": 13900,
+   "mileage_km": 227000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6I8dA7.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151299203",
+   "year": 2004,
+   "asking_price_pln": 18400,
+   "mileage_km": 212474,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IidWh.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151476744",
+   "year": 2006,
+   "asking_price_pln": 12900,
+   "mileage_km": 334000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IiY6Q.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151566127",
+   "year": 2005,
+   "asking_price_pln": 16800,
+   "mileage_km": 251000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6Ijlmw.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151558431",
+   "year": 2004,
+   "asking_price_pln": 16900,
+   "mileage_km": 170697,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6Ijjmn.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151277880",
+   "year": 2006,
+   "asking_price_pln": 18700,
+   "mileage_km": 147200,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6Ii8nm.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151554772",
+   "year": 2006,
+   "asking_price_pln": 10500,
+   "mileage_km": 390082,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6Ijipm.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151548845",
+   "year": 2005,
+   "asking_price_pln": 14500,
+   "mileage_km": 251123,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IjgRL.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151125372",
+   "year": 2005,
+   "asking_price_pln": 15000,
+   "mileage_km": 214000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhuHy.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151409977",
+   "year": 2005,
+   "asking_price_pln": 17000,
+   "mileage_km": 170000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IiGJX.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151538691",
+   "year": 2006,
+   "asking_price_pln": 14500,
+   "mileage_km": 232410,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IjedZ.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6147550170",
+   "year": 2006,
+   "asking_price_pln": 16999,
+   "mileage_km": 187000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6I2uD0.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6150679928",
+   "year": 2005,
+   "asking_price_pln": 20000,
+   "mileage_km": 213892,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IfCOY.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151161168",
+   "year": 2006,
+   "asking_price_pln": 15000,
+   "mileage_km": 237000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhE0U.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6150673413",
+   "year": 2003,
+   "asking_price_pln": 12900,
+   "mileage_km": 171353,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IfB7T.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6150315729",
+   "year": 2006,
+   "asking_price_pln": 10500,
+   "mileage_km": 233767,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6Ie64N.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6150591430",
+   "year": 2002,
+   "asking_price_pln": 14000,
+   "mileage_km": 174400,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IffNA.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151150449",
+   "year": 2005,
+   "asking_price_pln": 16900,
+   "mileage_km": 190000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhBe1.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151216812",
+   "year": 2005,
+   "asking_price_pln": 12500,
+   "mileage_km": 315642,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhSuo.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151354656",
+   "year": 2006,
+   "asking_price_pln": 13700,
+   "mileage_km": 213000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IislG.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151057191",
+   "year": 2006,
+   "asking_price_pln": 18999,
+   "mileage_km": 198000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhcXR.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6150450952",
+   "year": 2006,
+   "asking_price_pln": 11500,
+   "mileage_km": 310438,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IeFfO.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151121597",
+   "year": 2006,
+   "asking_price_pln": 10000,
+   "mileage_km": 280000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhtIF.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151270872",
+   "year": 2004,
+   "asking_price_pln": 15999,
+   "mileage_km": 220000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6Ii6yk.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6150719949",
+   "year": 2004,
+   "asking_price_pln": 11900,
+   "mileage_km": 253093,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IfNet.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6145820852",
+   "year": 2006,
+   "asking_price_pln": 13445,
+   "mileage_km": 284000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6HWeKM.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151193816",
+   "year": 2002,
+   "asking_price_pln": 10500,
+   "mileage_km": 124000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhMwu.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6149708207",
+   "year": 2005,
+   "asking_price_pln": 13600,
+   "mileage_km": 261000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6Iby23.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151459463",
+   "year": 2002,
+   "asking_price_pln": 15900,
+   "mileage_km": 248000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IiTC7.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6148731943",
+   "year": 2004,
+   "asking_price_pln": 18800,
+   "mileage_km": 208000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6I7s3R.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151059441",
+   "year": 2005,
+   "asking_price_pln": 11900,
+   "mileage_km": 240000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6Ihdy9.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151455339",
+   "year": 2005,
+   "asking_price_pln": 13900,
+   "mileage_km": 249638,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IiSxB.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151454438",
+   "year": 2005,
+   "asking_price_pln": 14900,
+   "mileage_km": 248714,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IiSj4.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151447278",
+   "year": 2005,
+   "asking_price_pln": 10900,
+   "mileage_km": 304577,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IiQrA.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151163781",
+   "year": 2005,
+   "asking_price_pln": 15900,
+   "mileage_km": 260389,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhEH3.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151242448",
+   "year": 2004,
+   "asking_price_pln": 16999,
+   "mileage_km": 270800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhZ9S.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151231679",
+   "year": 2002,
+   "asking_price_pln": 12000,
+   "mileage_km": 132522,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhVmb.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151231164",
+   "year": 2006,
+   "asking_price_pln": 11900,
+   "mileage_km": 301000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhVdS.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151230608",
+   "year": 2005,
+   "asking_price_pln": 10900,
+   "mileage_km": 370000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhV4U.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151422784",
+   "year": 2003,
+   "asking_price_pln": 12000,
+   "mileage_km": 219764,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IiK4v.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151388987",
+   "year": 2004,
+   "asking_price_pln": 15900,
+   "mileage_km": 166000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IiBhp.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151106859",
+   "year": 2006,
+   "asking_price_pln": 11200,
+   "mileage_km": 258041,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IhpSX.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151385654",
+   "year": 2005,
+   "asking_price_pln": 14500,
+   "mileage_km": 219800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IiApE.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6148621482",
+   "year": 2003,
+   "asking_price_pln": 12500,
+   "mileage_km": 245580,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6I6Zke.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6150840537",
+   "year": 2006,
+   "asking_price_pln": 20000,
+   "mileage_km": 249886,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IgiBr.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151370252",
+   "year": 2005,
+   "asking_price_pln": 15000,
+   "mileage_km": 206063,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6Iivpe.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6150110595",
+   "year": 2001,
+   "asking_price_pln": 12000,
+   "mileage_km": 102000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IdeIb.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6149121841",
+   "year": 2004,
+   "asking_price_pln": 14000,
+   "mileage_km": 225000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6I95ux.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6148307808",
+   "year": 2006,
+   "asking_price_pln": 14100,
+   "mileage_km": 273154,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6I5FIY.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6150364914",
+   "year": 2005,
+   "asking_price_pln": 10000,
+   "mileage_km": 282666,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IeiS6.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6151352126",
+   "year": 2004,
+   "asking_price_pln": 10900,
+   "mileage_km": 234643,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6IirGS.html"
+  },
+  {
+   "model_id": "klasa-c",
+   "id": "6150173262",
+   "year": 2006,
+   "asking_price_pln": 15900,
+   "mileage_km": 233858,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-c-ID6Idw0V.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151544541",
+   "year": 2006,
+   "asking_price_pln": 15900,
+   "mileage_km": 287000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IjfKl.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151560597",
+   "year": 2003,
+   "asking_price_pln": 15000,
+   "mileage_km": 330000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IjjWj.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150401998",
+   "year": 2006,
+   "asking_price_pln": 20000,
+   "mileage_km": 287500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Iesve.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151352623",
+   "year": 2007,
+   "asking_price_pln": 15900,
+   "mileage_km": 392000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IirOT.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151039332",
+   "year": 2005,
+   "asking_price_pln": 19500,
+   "mileage_km": 198881,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ih8jO.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150295029",
+   "year": 2004,
+   "asking_price_pln": 11000,
+   "mileage_km": 425042,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ie0GW.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151320584",
+   "year": 2004,
+   "asking_price_pln": 12900,
+   "mileage_km": 292000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Iiju8.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6144953838",
+   "year": 2005,
+   "asking_price_pln": 18900,
+   "mileage_km": 341,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6HRBcG.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151577872",
+   "year": 2004,
+   "asking_price_pln": 12800,
+   "mileage_km": 271701,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IjopV.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151577255",
+   "year": 2006,
+   "asking_price_pln": 15900,
+   "mileage_km": 361000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IjofZ.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151302668",
+   "year": 2006,
+   "asking_price_pln": 18900,
+   "mileage_km": 240000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IiePa.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150277057",
+   "year": 2008,
+   "asking_price_pln": 19500,
+   "mileage_km": 307212,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IdV13.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6149394263",
+   "year": 2003,
+   "asking_price_pln": 11000,
+   "mileage_km": 415000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Iaemr.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151304010",
+   "year": 2003,
+   "asking_price_pln": 19900,
+   "mileage_km": 433024,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IifaO.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6149408179",
+   "year": 2007,
+   "asking_price_pln": 19900,
+   "mileage_km": 288287,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IahYT.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150885900",
+   "year": 2007,
+   "asking_price_pln": 18500,
+   "mileage_km": 153375,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Igup6.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6147342057",
+   "year": 2005,
+   "asking_price_pln": 14500,
+   "mileage_km": 351576,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6I1Cul.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150896820",
+   "year": 2003,
+   "asking_price_pln": 19900,
+   "mileage_km": 273000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Igxfe.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151565479",
+   "year": 2005,
+   "asking_price_pln": 16000,
+   "mileage_km": 370000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ijlc3.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151386253",
+   "year": 2005,
+   "asking_price_pln": 15900,
+   "mileage_km": 341200,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IiAzj.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151473322",
+   "year": 2007,
+   "asking_price_pln": 14500,
+   "mileage_km": 334673,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IiXdE.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6147713546",
+   "year": 2004,
+   "asking_price_pln": 16500,
+   "mileage_km": 191660,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6I3b86.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151375826",
+   "year": 2004,
+   "asking_price_pln": 10400,
+   "mileage_km": 383000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IixR8.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151555982",
+   "year": 2007,
+   "asking_price_pln": 17500,
+   "mileage_km": 293000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IjiIS.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150359915",
+   "year": 2004,
+   "asking_price_pln": 18900,
+   "mileage_km": 336790,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Iehzt.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151275829",
+   "year": 2005,
+   "asking_price_pln": 13900,
+   "mileage_km": 318627,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ii7Qh.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151370705",
+   "year": 2003,
+   "asking_price_pln": 16700,
+   "mileage_km": 229844,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Iivvx.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150505208",
+   "year": 2007,
+   "asking_price_pln": 16500,
+   "mileage_km": 441000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IeTmU.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151545850",
+   "year": 2007,
+   "asking_price_pln": 19999,
+   "mileage_km": 265940,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ijg5s.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6149819860",
+   "year": 2005,
+   "asking_price_pln": 10900,
+   "mileage_km": 174800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ic14U.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6148382978",
+   "year": 2004,
+   "asking_price_pln": 19500,
+   "mileage_km": 247800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6I5Zho.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151541101",
+   "year": 2004,
+   "asking_price_pln": 10900,
+   "mileage_km": 400000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IjeQR.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6141413177",
+   "year": 2003,
+   "asking_price_pln": 10400,
+   "mileage_km": 227000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6HCK7f.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150726339",
+   "year": 2007,
+   "asking_price_pln": 13500,
+   "mileage_km": 451232,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IfOTx.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151538462",
+   "year": 2007,
+   "asking_price_pln": 19500,
+   "mileage_km": 257800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ijeai.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6143394456",
+   "year": 2007,
+   "asking_price_pln": 17500,
+   "mileage_km": 345000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6HL3xm.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6144494575",
+   "year": 2005,
+   "asking_price_pln": 20000,
+   "mileage_km": 192000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6HPFJd.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151531008",
+   "year": 2006,
+   "asking_price_pln": 14800,
+   "mileage_km": 340000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ijce4.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151530680",
+   "year": 2005,
+   "asking_price_pln": 16990,
+   "mileage_km": 335000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ijc8M.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151527686",
+   "year": 2006,
+   "asking_price_pln": 17500,
+   "mileage_km": 229000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ijbmu.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150676915",
+   "year": 2003,
+   "asking_price_pln": 19999,
+   "mileage_km": 303500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IfC2n.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151527188",
+   "year": 2004,
+   "asking_price_pln": 17900,
+   "mileage_km": 284000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ijbes.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151246025",
+   "year": 2005,
+   "asking_price_pln": 18900,
+   "mileage_km": 230000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ii05z.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151527181",
+   "year": 2004,
+   "asking_price_pln": 20000,
+   "mileage_km": 273899,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ijbel.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151526999",
+   "year": 2006,
+   "asking_price_pln": 12900,
+   "mileage_km": 335000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ijbbp.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150973193",
+   "year": 2007,
+   "asking_price_pln": 20000,
+   "mileage_km": 263264,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IgR73.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151238457",
+   "year": 2005,
+   "asking_price_pln": 10900,
+   "mileage_km": 260000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhY7w.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6139946484",
+   "year": 2007,
+   "asking_price_pln": 14900,
+   "mileage_km": 370000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6HvAyU.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151516595",
+   "year": 2005,
+   "asking_price_pln": 19999,
+   "mileage_km": 158000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ij8tB.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151156273",
+   "year": 2004,
+   "asking_price_pln": 19900,
+   "mileage_km": 236854,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhCJX.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6147518886",
+   "year": 2007,
+   "asking_price_pln": 18999,
+   "mileage_km": 307000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6I2muq.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151151655",
+   "year": 2007,
+   "asking_price_pln": 12999,
+   "mileage_km": 286000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhBxt.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151512683",
+   "year": 2005,
+   "asking_price_pln": 18000,
+   "mileage_km": 270625,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ij7sw.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151336253",
+   "year": 2005,
+   "asking_price_pln": 16900,
+   "mileage_km": 314121,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IinyR.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150951724",
+   "year": 2008,
+   "asking_price_pln": 17900,
+   "mileage_km": 212217,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IgLvM.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151230131",
+   "year": 2005,
+   "asking_price_pln": 18800,
+   "mileage_km": 228000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhWXd.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151510932",
+   "year": 2004,
+   "asking_price_pln": 12999,
+   "mileage_km": 289000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ij70g.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151106033",
+   "year": 2004,
+   "asking_price_pln": 15600,
+   "mileage_km": 330000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhpFD.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6147622162",
+   "year": 2005,
+   "asking_price_pln": 16800,
+   "mileage_km": 346850,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6I2Nma.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150694261",
+   "year": 2003,
+   "asking_price_pln": 10500,
+   "mileage_km": 481592,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IfGy9.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150316841",
+   "year": 2004,
+   "asking_price_pln": 16900,
+   "mileage_km": 368000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ie6mJ.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151206881",
+   "year": 2004,
+   "asking_price_pln": 16500,
+   "mileage_km": 325000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhPUd.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151206767",
+   "year": 2008,
+   "asking_price_pln": 14000,
+   "mileage_km": 293700,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhPSn.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150478071",
+   "year": 2007,
+   "asking_price_pln": 11500,
+   "mileage_km": 382000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IeMjd.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150909565",
+   "year": 2005,
+   "asking_price_pln": 16900,
+   "mileage_km": 299000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IgAyN.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151303538",
+   "year": 2005,
+   "asking_price_pln": 14900,
+   "mileage_km": 262700,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Iif3c.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150630375",
+   "year": 2005,
+   "asking_price_pln": 14000,
+   "mileage_km": 335181,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IfpWJ.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150703227",
+   "year": 2003,
+   "asking_price_pln": 11500,
+   "mileage_km": 430000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IfISL.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151194624",
+   "year": 2003,
+   "asking_price_pln": 18000,
+   "mileage_km": 333185,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhMIv.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151194137",
+   "year": 2004,
+   "asking_price_pln": 13900,
+   "mileage_km": 349000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhMAF.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151464873",
+   "year": 2005,
+   "asking_price_pln": 16900,
+   "mileage_km": 328000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IiW1n.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150783382",
+   "year": 2006,
+   "asking_price_pln": 14700,
+   "mileage_km": 279000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ig3JA.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6147391441",
+   "year": 2006,
+   "asking_price_pln": 18900,
+   "mileage_km": 221923,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6I1PkR.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151461160",
+   "year": 2003,
+   "asking_price_pln": 11700,
+   "mileage_km": 324306,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IiU3u.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151272895",
+   "year": 2003,
+   "asking_price_pln": 16500,
+   "mileage_km": 220306,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ii74X.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151272598",
+   "year": 2008,
+   "asking_price_pln": 11990,
+   "mileage_km": 430000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ii70a.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151182525",
+   "year": 2003,
+   "asking_price_pln": 18500,
+   "mileage_km": 293086,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhJzn.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151078809",
+   "year": 2007,
+   "asking_price_pln": 17900,
+   "mileage_km": 274071,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhiAx.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6148092502",
+   "year": 2003,
+   "asking_price_pln": 18500,
+   "mileage_km": 374000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6I4LIi.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6149221795",
+   "year": 2004,
+   "asking_price_pln": 19900,
+   "mileage_km": 233000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6I9wuH.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150015954",
+   "year": 2004,
+   "asking_price_pln": 17500,
+   "mileage_km": 310000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IcQ5I.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6149983873",
+   "year": 2003,
+   "asking_price_pln": 19900,
+   "mileage_km": 291500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IcHKh.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150397048",
+   "year": 2005,
+   "asking_price_pln": 19999,
+   "mileage_km": 310000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Iereo.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6148176655",
+   "year": 2008,
+   "asking_price_pln": 11000,
+   "mileage_km": 512499,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6I57BB.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151165716",
+   "year": 2004,
+   "asking_price_pln": 17800,
+   "mileage_km": 312000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhFcg.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151447090",
+   "year": 2005,
+   "asking_price_pln": 15500,
+   "mileage_km": 330000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IiQoy.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6149739347",
+   "year": 2004,
+   "asking_price_pln": 14499,
+   "mileage_km": 268000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IbG8j.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151245700",
+   "year": 2006,
+   "asking_price_pln": 15400,
+   "mileage_km": 304000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ii00k.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6149425294",
+   "year": 2003,
+   "asking_price_pln": 17500,
+   "mileage_km": 286000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IamqV.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150303912",
+   "year": 2005,
+   "asking_price_pln": 18900,
+   "mileage_km": 260000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ie30c.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151145318",
+   "year": 2007,
+   "asking_price_pln": 15800,
+   "mileage_km": 317081,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhzTg.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150838114",
+   "year": 2005,
+   "asking_price_pln": 16000,
+   "mileage_km": 370000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IghYm.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151423874",
+   "year": 2003,
+   "asking_price_pln": 17500,
+   "mileage_km": 270000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IiKm6.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6149569438",
+   "year": 2003,
+   "asking_price_pln": 12900,
+   "mileage_km": 449552,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IaXWQ.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6146970373",
+   "year": 2004,
+   "asking_price_pln": 18000,
+   "mileage_km": 318000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6I03Nr.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151135017",
+   "year": 2004,
+   "asking_price_pln": 15900,
+   "mileage_km": 251000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ihxd7.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150535461",
+   "year": 2003,
+   "asking_price_pln": 17900,
+   "mileage_km": 298083,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6If1eR.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150803256",
+   "year": 2003,
+   "asking_price_pln": 12500,
+   "mileage_km": 372000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ig8U8.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150421421",
+   "year": 2006,
+   "asking_price_pln": 17900,
+   "mileage_km": 417605,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Iexzw.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151375537",
+   "year": 2003,
+   "asking_price_pln": 11500,
+   "mileage_km": 218000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IixMt.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151081040",
+   "year": 2003,
+   "asking_price_pln": 13900,
+   "mileage_km": 284000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ihjav.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151080201",
+   "year": 2005,
+   "asking_price_pln": 10500,
+   "mileage_km": 322000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhiVZ.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151361261",
+   "year": 2004,
+   "asking_price_pln": 15700,
+   "mileage_km": 298000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Iiu4d.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151077880",
+   "year": 2004,
+   "asking_price_pln": 15000,
+   "mileage_km": 291870,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ihily.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151076083",
+   "year": 2005,
+   "asking_price_pln": 17400,
+   "mileage_km": 271154,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IhhSz.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6151354162",
+   "year": 2003,
+   "asking_price_pln": 19900,
+   "mileage_km": 149000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IisdI.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6149656130",
+   "year": 2006,
+   "asking_price_pln": 12000,
+   "mileage_km": 296000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6Ibku6.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6150466365",
+   "year": 2003,
+   "asking_price_pln": 16000,
+   "mileage_km": 324000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6IeJgp.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6149095514",
+   "year": 2003,
+   "asking_price_pln": 17900,
+   "mileage_km": 244260,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6I8YDU.html"
+  },
+  {
+   "model_id": "klasa-e",
+   "id": "6146597289",
+   "year": 2004,
+   "asking_price_pln": 11250,
+   "mileage_km": 357000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/mercedes-benz-klasa-e-ID6HYuJX.html"
+  },
+  {
+   "model_id": "x-type",
+   "id": "6151126026",
+   "year": 2004,
+   "asking_price_pln": 11950,
+   "mileage_km": 284000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-x-type-ID6IhuS6.html"
+  },
+  {
+   "model_id": "x-type",
+   "id": "6145662537",
+   "year": 2002,
+   "asking_price_pln": 12900,
+   "mileage_km": 181000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-x-type-ID6HUzzj.html"
+  },
+  {
+   "model_id": "x-type",
+   "id": "6149018958",
+   "year": 2001,
+   "asking_price_pln": 12000,
+   "mileage_km": 160230,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-x-type-ID6I8EJ8.html"
+  },
+  {
+   "model_id": "x-type",
+   "id": "6149122826",
+   "year": 2003,
+   "asking_price_pln": 13500,
+   "mileage_km": 169000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-x-type-ID6I95Kq.html"
+  },
+  {
+   "model_id": "x-type",
+   "id": "6151292312",
+   "year": 2002,
+   "asking_price_pln": 10500,
+   "mileage_km": 225000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-x-type-ID6Iic88.html"
+  },
+  {
+   "model_id": "x-type",
+   "id": "6118197834",
+   "year": 2003,
+   "asking_price_pln": 10900,
+   "mileage_km": 210000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-x-type-ID6G3kKe.html"
+  },
+  {
+   "model_id": "s-type",
+   "id": "6151582883",
+   "year": 2004,
+   "asking_price_pln": 12000,
+   "mileage_km": 277320,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-s-type-ID6IjpIL.html"
+  },
+  {
+   "model_id": "s-type",
+   "id": "6151466665",
+   "year": 2000,
+   "asking_price_pln": 11350,
+   "mileage_km": 270551,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-s-type-ID6IiWuh.html"
+  },
+  {
+   "model_id": "s-type",
+   "id": "6149693725",
+   "year": 2006,
+   "asking_price_pln": 17900,
+   "mileage_km": 165000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-s-type-ID6Ibugt.html"
+  },
+  {
+   "model_id": "s-type",
+   "id": "6131798878",
+   "year": 1999,
+   "asking_price_pln": 19900,
+   "mileage_km": 137800,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-s-type-ID6GYoZU.html"
+  },
+  {
+   "model_id": "s-type",
+   "id": "6150697100",
+   "year": 2007,
+   "asking_price_pln": 10900,
+   "mileage_km": 316068,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-s-type-ID6IfHhV.html"
+  },
+  {
+   "model_id": "s-type",
+   "id": "6151067532",
+   "year": 2005,
+   "asking_price_pln": 18499,
+   "mileage_km": 199260,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-s-type-ID6IhfEE.html"
+  },
+  {
+   "model_id": "s-type",
+   "id": "6151465852",
+   "year": 2004,
+   "asking_price_pln": 15500,
+   "mileage_km": 196633,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-s-type-ID6IiWha.html"
+  },
+  {
+   "model_id": "s-type",
+   "id": "6151328197",
+   "year": 2002,
+   "asking_price_pln": 12999,
+   "mileage_km": 195750,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-s-type-ID6IilsW.html"
+  },
+  {
+   "model_id": "s-type",
+   "id": "6151077208",
+   "year": 2001,
+   "asking_price_pln": 17900,
+   "mileage_km": 173763,
+   "url": "https://www.otomoto.pl/osobowe/oferta/jaguar-s-type-ID6IhiaI.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151578719",
+   "year": 2008,
+   "asking_price_pln": 13700,
+   "mileage_km": 257000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IjoDB.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151553759",
+   "year": 2008,
+   "asking_price_pln": 19900,
+   "mileage_km": 199000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Iji91.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151070627",
+   "year": 2007,
+   "asking_price_pln": 19900,
+   "mileage_km": 225000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Ihgsz.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151581325",
+   "year": 2007,
+   "asking_price_pln": 13500,
+   "mileage_km": 310000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IjpjD.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151200852",
+   "year": 2007,
+   "asking_price_pln": 10300,
+   "mileage_km": 264000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IhOkY.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151357749",
+   "year": 2006,
+   "asking_price_pln": 19900,
+   "mileage_km": 245214,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Iit9z.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6148193558",
+   "year": 2011,
+   "asking_price_pln": 15000,
+   "mileage_km": 212000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6I5c0e.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151040056",
+   "year": 2008,
+   "asking_price_pln": 12500,
+   "mileage_km": 220767,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Ih8wu.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151292614",
+   "year": 2009,
+   "asking_price_pln": 17000,
+   "mileage_km": 189161,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Iicd0.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151565542",
+   "year": 2009,
+   "asking_price_pln": 14500,
+   "mileage_km": 265955,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Ijld4.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151263875",
+   "year": 2010,
+   "asking_price_pln": 14999,
+   "mileage_km": 248917,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Ii4Jt.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6148476255",
+   "year": 2009,
+   "asking_price_pln": 13990,
+   "mileage_km": 318000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6I6nxR.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6150674993",
+   "year": 2007,
+   "asking_price_pln": 12200,
+   "mileage_km": 272589,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IfBxn.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151526809",
+   "year": 2007,
+   "asking_price_pln": 19900,
+   "mileage_km": 154000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Ijb8l.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6147572308",
+   "year": 2010,
+   "asking_price_pln": 16800,
+   "mileage_km": 189000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6I2Ao4.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6150609158",
+   "year": 2009,
+   "asking_price_pln": 18999,
+   "mileage_km": 279250,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Ifkpv.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6150949292",
+   "year": 2009,
+   "asking_price_pln": 19000,
+   "mileage_km": 169000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IgKTy.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151144108",
+   "year": 2010,
+   "asking_price_pln": 15700,
+   "mileage_km": 255361,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IhzzK.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151066583",
+   "year": 2008,
+   "asking_price_pln": 11000,
+   "mileage_km": 192259,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Ihfpl.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6149967803",
+   "year": 2009,
+   "asking_price_pln": 15900,
+   "mileage_km": 246000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IcDz5.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151326747",
+   "year": 2012,
+   "asking_price_pln": 16500,
+   "mileage_km": 244000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Iil5x.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6149979314",
+   "year": 2007,
+   "asking_price_pln": 11900,
+   "mileage_km": 228189,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IcGyK.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151151823",
+   "year": 2009,
+   "asking_price_pln": 17900,
+   "mileage_km": 241000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IhBAb.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151476566",
+   "year": 2009,
+   "asking_price_pln": 12500,
+   "mileage_km": 316000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IiY3Y.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151161708",
+   "year": 2007,
+   "asking_price_pln": 13900,
+   "mileage_km": 201455,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IhE9C.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6146526476",
+   "year": 2005,
+   "asking_price_pln": 10900,
+   "mileage_km": 281000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6HYcjO.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6150610391",
+   "year": 2009,
+   "asking_price_pln": 16999,
+   "mileage_km": 155000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IfkJp.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151183553",
+   "year": 2008,
+   "asking_price_pln": 19900,
+   "mileage_km": 240000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IhJPX.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6150165467",
+   "year": 2008,
+   "asking_price_pln": 11200,
+   "mileage_km": 385418,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IdsZd.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151247939",
+   "year": 2005,
+   "asking_price_pln": 11800,
+   "mileage_km": 236146,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Ii0Ar.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151171440",
+   "year": 2006,
+   "asking_price_pln": 13000,
+   "mileage_km": 165000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IhGGA.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6150569343",
+   "year": 2012,
+   "asking_price_pln": 15000,
+   "mileage_km": 326236,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Ifa3l.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151447597",
+   "year": 2009,
+   "asking_price_pln": 15900,
+   "mileage_km": 212219,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IiQvJ.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151413488",
+   "year": 2008,
+   "asking_price_pln": 11700,
+   "mileage_km": 251000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IiHEA.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151105135",
+   "year": 2007,
+   "asking_price_pln": 13700,
+   "mileage_km": 216659,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Ihpr9.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151103832",
+   "year": 2008,
+   "asking_price_pln": 15000,
+   "mileage_km": 258205,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Ihp68.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151380642",
+   "year": 2008,
+   "asking_price_pln": 12750,
+   "mileage_km": 317506,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Iiz6O.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6150719471",
+   "year": 2010,
+   "asking_price_pln": 15900,
+   "mileage_km": 178000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IfN6L.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151076825",
+   "year": 2009,
+   "asking_price_pln": 11500,
+   "mileage_km": 288000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6Ihi4x.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6150490996",
+   "year": 2010,
+   "asking_price_pln": 14999,
+   "mileage_km": 253611,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IePFG.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6151291318",
+   "year": 2007,
+   "asking_price_pln": 15800,
+   "mileage_km": 264000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IibS6.html"
+  },
+  {
+   "model_id": "s40",
+   "id": "6149521297",
+   "year": 2008,
+   "asking_price_pln": 14800,
+   "mileage_km": 182102,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s40-ID6IaLpn.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151576486",
+   "year": 2008,
+   "asking_price_pln": 19900,
+   "mileage_km": 219000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6Ijo3A.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151535762",
+   "year": 2006,
+   "asking_price_pln": 14900,
+   "mileage_km": 249000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6IjdsK.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151322569",
+   "year": 2008,
+   "asking_price_pln": 14000,
+   "mileage_km": 358100,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6Iik09.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6150949201",
+   "year": 2008,
+   "asking_price_pln": 19999,
+   "mileage_km": 294000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6IgKS5.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151315988",
+   "year": 2002,
+   "asking_price_pln": 19900,
+   "mileage_km": 257150,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6Iiii0.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6150506709",
+   "year": 2008,
+   "asking_price_pln": 12000,
+   "mileage_km": 352076,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6IeTL7.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6148871594",
+   "year": 2007,
+   "asking_price_pln": 14900,
+   "mileage_km": 250000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6I82oi.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151386756",
+   "year": 2004,
+   "asking_price_pln": 10500,
+   "mileage_km": 290500,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6IiAHq.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151289618",
+   "year": 2007,
+   "asking_price_pln": 15200,
+   "mileage_km": 235000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6IibqG.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151554884",
+   "year": 2007,
+   "asking_price_pln": 17000,
+   "mileage_km": 416840,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6Ijira.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6150076935",
+   "year": 2008,
+   "asking_price_pln": 13000,
+   "mileage_km": 457000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6Id5Xh.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151232357",
+   "year": 2007,
+   "asking_price_pln": 19900,
+   "mileage_km": 219358,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6IhVx7.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151511532",
+   "year": 2002,
+   "asking_price_pln": 10900,
+   "mileage_km": 183240,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6Ij79V.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151511466",
+   "year": 2005,
+   "asking_price_pln": 17500,
+   "mileage_km": 250000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6Ij78S.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151509473",
+   "year": 2007,
+   "asking_price_pln": 20000,
+   "mileage_km": 348541,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6Ij6CJ.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6149684800",
+   "year": 2007,
+   "asking_price_pln": 19900,
+   "mileage_km": 251000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6IbrVv.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151205892",
+   "year": 2007,
+   "asking_price_pln": 18900,
+   "mileage_km": 199897,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6IhPEg.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6149542619",
+   "year": 2008,
+   "asking_price_pln": 14000,
+   "mileage_km": 339124,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6IaQXh.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151290904",
+   "year": 2006,
+   "asking_price_pln": 16900,
+   "mileage_km": 185000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6IibLq.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6150806130",
+   "year": 2005,
+   "asking_price_pln": 16900,
+   "mileage_km": 372000,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6Ig9Eu.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151172066",
+   "year": 2004,
+   "asking_price_pln": 10000,
+   "mileage_km": 368200,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6IhGQG.html"
+  },
+  {
+   "model_id": "s60",
+   "id": "6151126926",
+   "year": 2007,
+   "asking_price_pln": 17999,
+   "mileage_km": 312303,
+   "url": "https://www.otomoto.pl/osobowe/oferta/volvo-s60-ID6Ihw6C.html"
+  }
+ ]
+}

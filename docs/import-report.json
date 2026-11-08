@@ -1,0 +1,46 @@
+{
+  "snapshot": "2026-11-08",
+  "fileHash": "3a8ceb39257825299d9095bd8395933c6a0ccfbb7fda8e5fea9f2e1e3d0935ac",
+  "inputOffers": 787,
+  "validOffers": 787,
+  "modelCount": 8,
+  "added": 787,
+  "updated": 0,
+  "unchanged": 0,
+  "older": 0,
+  "saved": 787,
+  "duplicatesInFile": 0,
+  "errors": [],
+  "warnings": [
+    {
+      "entity": "offer",
+      "id": "6150838471",
+      "message": "Przebieg do sprawdzenia: ponad 500 tys. km. Zweryfikuj dokumentację i stan pojazdu."
+    },
+    {
+      "entity": "offer",
+      "id": "6151183959",
+      "message": "Przebieg do sprawdzenia: nietypowo niski względem wieku. Możliwa pomyłka jednostek lub wpisu; nie korygujemy wartości."
+    },
+    {
+      "entity": "offer",
+      "id": "6125927780",
+      "message": "Przebieg do sprawdzenia: ponad 500 tys. km. Zweryfikuj dokumentację i stan pojazdu."
+    },
+    {
+      "entity": "offer",
+      "id": "6149655861",
+      "message": "Przebieg do sprawdzenia: ponad 500 tys. km. Zweryfikuj dokumentację i stan pojazdu."
+    },
+    {
+      "entity": "offer",
+      "id": "6144953838",
+      "message": "Przebieg do sprawdzenia: nietypowo niski względem wieku. Możliwa pomyłka jednostek lub wpisu; nie korygujemy wartości."
+    },
+    {
+      "entity": "offer",
+      "id": "6148176655",
+      "message": "Przebieg do sprawdzenia: ponad 500 tys. km. Zweryfikuj dokumentację i stan pojazdu."
+    }
+  ]
+}
